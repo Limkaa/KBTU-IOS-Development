@@ -1,0 +1,1519 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aFS-nu-leM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--KBTU-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="KBTUapp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoWh20_3" translatesAutoresizingMaskIntoConstraints="NO" id="IFr-pm-XtT">
+                                <rect key="frame" x="87" y="179" width="240" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="Df3-yD-HRO"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The best technical university in Kazakhstan" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gse-a2-zE6">
+                                <rect key="frame" x="20" y="333" width="374" height="53"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="53" id="MWv-kS-BD7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eA6-hP-j7A">
+                                <rect key="frame" x="20" y="409" width="374" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="REPUBLICAN SUBJECT OLYMPIAD KBTU">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="47Q-s1-5r7" kind="show" id="hR2-UH-rHo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tnS-PO-rfm">
+                                <rect key="frame" x="20" y="450" width="374" height="33"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Women Empowerment@KBTU">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="D6A-i2-T6J" kind="show" id="9rd-OE-82M"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h2c-v8-dkE">
+                                <rect key="frame" x="20" y="512" width="374" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="fmr-b1-J6C"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Mentorship">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="YK0-pN-4M9" kind="show" id="0xS-0J-YVp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g20-ar-WXa">
+                                <rect key="frame" x="20" y="550" width="374" height="33"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="r6r-hu-g2D"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="First year students study">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Gzw-1S-WaO" kind="show" id="c9F-SJ-AIJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zji-7a-ZBx">
+                                <rect key="frame" x="20" y="735" width="374" height="33"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="QYQ-G3-DEx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Make reservation">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="SHl-KM-1aK" kind="show" id="ACu-YJ-kLx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2cp-6R-ljY">
+                                <rect key="frame" x="20" y="103" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Hd6-0B-OQp"/>
+                                    <constraint firstAttribute="width" constant="50" id="NcV-db-uGc"/>
+                                </constraints>
+                                <state key="normal">
+                                    <imageReference key="backgroundImage" image="menu_icon" symbolScale="medium"/>
+                                </state>
+                                <connections>
+                                    <segue destination="bSE-M7-a6p" kind="show" id="WiT-5O-LHR"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your reserved Teams meeting with deanery:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sOE-fM-TYs">
+                                <rect key="frame" x="20" y="621" width="374" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="1hG-ZD-Ycu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You have no any reservation" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kYr-5X-x2b">
+                                <rect key="frame" x="20" y="665" width="374" height="62"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="62" id="s73-U2-4g8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yR4-EA-jvg">
+                                <rect key="frame" x="20" y="776" width="374" height="33"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="vvg-zg-Gqt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Delete reservation">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="DeleteReservationPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xru-ua-Hw6"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                        <constraints>
+                            <constraint firstItem="eA6-hP-j7A" firstAttribute="top" secondItem="gse-a2-zE6" secondAttribute="bottom" constant="23" id="0eD-5B-REI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="h2c-v8-dkE" secondAttribute="trailing" constant="20" id="52o-PO-3Vo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="g20-ar-WXa" secondAttribute="trailing" constant="20" id="5CB-iF-eFm"/>
+                            <constraint firstItem="Zji-7a-ZBx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="8R7-fK-tes"/>
+                            <constraint firstItem="Zji-7a-ZBx" firstAttribute="top" secondItem="kYr-5X-x2b" secondAttribute="bottom" constant="8" symbolic="YES" id="BWu-Wt-DKy"/>
+                            <constraint firstItem="sOE-fM-TYs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Bkt-j1-Iuh"/>
+                            <constraint firstItem="yR4-EA-jvg" firstAttribute="top" secondItem="Zji-7a-ZBx" secondAttribute="bottom" constant="8" symbolic="YES" id="Dwu-ar-JOE"/>
+                            <constraint firstItem="h2c-v8-dkE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="FYC-F1-nBp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sOE-fM-TYs" secondAttribute="trailing" constant="20" id="GQZ-mc-X5M"/>
+                            <constraint firstItem="gse-a2-zE6" firstAttribute="trailing" secondItem="tnS-PO-rfm" secondAttribute="trailing" id="H1J-HZ-yQe"/>
+                            <constraint firstItem="IFr-pm-XtT" firstAttribute="centerX" secondItem="gse-a2-zE6" secondAttribute="centerX" id="KQg-4q-3gp"/>
+                            <constraint firstItem="yR4-EA-jvg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="O8c-nl-s7u"/>
+                            <constraint firstItem="2cp-6R-ljY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="15" id="QZz-NO-WwA"/>
+                            <constraint firstItem="gse-a2-zE6" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Sed-KF-rXl"/>
+                            <constraint firstItem="gse-a2-zE6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="SxG-wV-pao"/>
+                            <constraint firstItem="h2c-v8-dkE" firstAttribute="top" secondItem="tnS-PO-rfm" secondAttribute="bottom" constant="29" id="T2h-Py-3Qp"/>
+                            <constraint firstItem="kYr-5X-x2b" firstAttribute="top" secondItem="sOE-fM-TYs" secondAttribute="bottom" constant="8" symbolic="YES" id="U99-D1-4c5"/>
+                            <constraint firstItem="gse-a2-zE6" firstAttribute="top" secondItem="IFr-pm-XtT" secondAttribute="bottom" constant="34" id="Xl4-gd-KDh"/>
+                            <constraint firstItem="gse-a2-zE6" firstAttribute="trailing" secondItem="eA6-hP-j7A" secondAttribute="trailing" id="ZIM-DV-c5v"/>
+                            <constraint firstItem="gse-a2-zE6" firstAttribute="leading" secondItem="eA6-hP-j7A" secondAttribute="leading" id="ekf-6o-2cq"/>
+                            <constraint firstItem="kYr-5X-x2b" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="fU1-Jm-3QE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kYr-5X-x2b" secondAttribute="trailing" constant="20" id="ht4-8p-BhQ"/>
+                            <constraint firstItem="g20-ar-WXa" firstAttribute="top" secondItem="h2c-v8-dkE" secondAttribute="bottom" constant="8" symbolic="YES" id="jhV-Vp-VwN"/>
+                            <constraint firstItem="gse-a2-zE6" firstAttribute="leading" secondItem="tnS-PO-rfm" secondAttribute="leading" id="mHo-tG-xCg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Zji-7a-ZBx" secondAttribute="trailing" constant="20" id="mnt-8d-oGw"/>
+                            <constraint firstItem="tnS-PO-rfm" firstAttribute="top" secondItem="eA6-hP-j7A" secondAttribute="bottom" constant="11" id="mwK-qu-G4G"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yR4-EA-jvg" secondAttribute="trailing" constant="20" id="pmb-Yw-4Gi"/>
+                            <constraint firstItem="g20-ar-WXa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="qnT-vs-2vc"/>
+                            <constraint firstItem="sOE-fM-TYs" firstAttribute="top" secondItem="g20-ar-WXa" secondAttribute="bottom" constant="38" id="tC5-J0-dwn"/>
+                            <constraint firstItem="2cp-6R-ljY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="uPG-En-adt"/>
+                            <constraint firstItem="gse-a2-zE6" firstAttribute="top" secondItem="IFr-pm-XtT" secondAttribute="bottom" constant="34" id="xQg-bs-Ckg"/>
+                            <constraint firstItem="IFr-pm-XtT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="91" id="zN6-fi-AOv"/>
+                            <constraint firstItem="IFr-pm-XtT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="zcs-5Z-liO"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="KBTU" id="CCY-bK-4Pf"/>
+                    <connections>
+                        <outlet property="ReservationField" destination="kYr-5X-x2b" id="vxR-aN-9M3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="78.348214285714278"/>
+        </scene>
+        <!--Meeting reservation-->
+        <scene sceneID="G8t-DE-FaP">
+            <objects>
+                <viewController id="SHl-KM-1aK" customClass="ReservationViewController" customModule="KBTUapp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6jb-gm-iRq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please choose options and fill info about you" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1S4-g2-V21">
+                                <rect key="frame" x="20" y="108" width="374" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="dqM-ul-qiB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your faculty" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7sh-jX-Xbr">
+                                <rect key="frame" x="20" y="157" width="374" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="7fV-ka-fvK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Manager" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qw2-Vw-Dry">
+                                <rect key="frame" x="20" y="199" width="374" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="aKp-hb-8YZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Meeting time" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dlh-nT-JZJ">
+                                <rect key="frame" x="20" y="241" width="374" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="gyu-28-enC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your name and surname" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PCg-zZ-eUl">
+                                <rect key="frame" x="20" y="283" width="374" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="uxL-BB-1E4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JG1-fP-74C">
+                                <rect key="frame" x="20" y="345" width="374" height="48"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="xxt-KB-Np1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="Reserve">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="reservePressed:" destination="SHl-KM-1aK" eventType="touchUpInside" id="OiA-M4-NCa"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="jiW-gh-cMP"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="7sh-jX-Xbr" firstAttribute="leading" secondItem="jiW-gh-cMP" secondAttribute="leading" constant="20" id="4PM-c6-oSA"/>
+                            <constraint firstItem="1S4-g2-V21" firstAttribute="leading" secondItem="jiW-gh-cMP" secondAttribute="leading" constant="20" id="6oZ-bR-6kH"/>
+                            <constraint firstItem="jiW-gh-cMP" firstAttribute="trailing" secondItem="Qw2-Vw-Dry" secondAttribute="trailing" constant="20" id="Cvy-rd-zPZ"/>
+                            <constraint firstItem="PCg-zZ-eUl" firstAttribute="leading" secondItem="jiW-gh-cMP" secondAttribute="leading" constant="20" id="D82-S1-h5e"/>
+                            <constraint firstItem="JG1-fP-74C" firstAttribute="top" secondItem="PCg-zZ-eUl" secondAttribute="bottom" constant="28" id="Dzo-Kj-n2O"/>
+                            <constraint firstItem="Qw2-Vw-Dry" firstAttribute="top" secondItem="7sh-jX-Xbr" secondAttribute="bottom" constant="8" symbolic="YES" id="EGX-cT-d2w"/>
+                            <constraint firstItem="dlh-nT-JZJ" firstAttribute="top" secondItem="Qw2-Vw-Dry" secondAttribute="bottom" constant="8" symbolic="YES" id="OhR-Y8-LU4"/>
+                            <constraint firstItem="1S4-g2-V21" firstAttribute="top" secondItem="jiW-gh-cMP" secondAttribute="top" constant="20" id="Pqo-He-8Ba"/>
+                            <constraint firstItem="jiW-gh-cMP" firstAttribute="trailing" secondItem="dlh-nT-JZJ" secondAttribute="trailing" constant="20" id="TiL-mf-Kf6"/>
+                            <constraint firstItem="PCg-zZ-eUl" firstAttribute="top" secondItem="dlh-nT-JZJ" secondAttribute="bottom" constant="8" symbolic="YES" id="UlU-vt-jdE"/>
+                            <constraint firstItem="jiW-gh-cMP" firstAttribute="trailing" secondItem="7sh-jX-Xbr" secondAttribute="trailing" constant="20" id="W7W-IE-wRT"/>
+                            <constraint firstItem="jiW-gh-cMP" firstAttribute="trailing" secondItem="JG1-fP-74C" secondAttribute="trailing" constant="20" id="YQ8-48-cnf"/>
+                            <constraint firstItem="Qw2-Vw-Dry" firstAttribute="leading" secondItem="jiW-gh-cMP" secondAttribute="leading" constant="20" id="ZM3-dq-xcA"/>
+                            <constraint firstItem="7sh-jX-Xbr" firstAttribute="top" secondItem="1S4-g2-V21" secondAttribute="bottom" constant="8" symbolic="YES" id="bNi-NB-SEA"/>
+                            <constraint firstItem="dlh-nT-JZJ" firstAttribute="leading" secondItem="jiW-gh-cMP" secondAttribute="leading" constant="20" id="cTV-3d-N62"/>
+                            <constraint firstItem="JG1-fP-74C" firstAttribute="leading" secondItem="jiW-gh-cMP" secondAttribute="leading" constant="20" id="iqy-B4-nnx"/>
+                            <constraint firstItem="jiW-gh-cMP" firstAttribute="trailing" secondItem="1S4-g2-V21" secondAttribute="trailing" constant="20" id="oMZ-yy-7Ba"/>
+                            <constraint firstItem="jiW-gh-cMP" firstAttribute="trailing" secondItem="PCg-zZ-eUl" secondAttribute="trailing" constant="20" id="ukC-Qd-Xme"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Meeting reservation" id="Yyn-zd-ewY"/>
+                    <connections>
+                        <outlet property="facultyField" destination="7sh-jX-Xbr" id="Qtg-PQ-brZ"/>
+                        <outlet property="managerField" destination="Qw2-Vw-Dry" id="6xw-eH-m7b"/>
+                        <outlet property="meetingTimeField" destination="dlh-nT-JZJ" id="t8R-eW-VCJ"/>
+                        <outlet property="nameField" destination="PCg-zZ-eUl" id="bet-t9-0lK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kSS-7n-DgO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2053.6231884057975" y="-514.28571428571422"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="SnR-tx-zi8">
+            <objects>
+                <viewController id="bSE-M7-a6p" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eD7-ZJ-wIC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ibx-lK-cxO">
+                                <rect key="frame" x="20" y="107" width="374" height="67"/>
+                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="67" id="NyA-lG-DS4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                <state key="normal" title="About us">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="tPM-Qa-b95" kind="show" id="k5x-ru-e7T"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rHm-Qr-vdu">
+                                <rect key="frame" x="20" y="182" width="374" height="67"/>
+                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="67" id="wi3-Gd-M8v"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                <state key="normal" title="Admission">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="kCO-1e-NFV" kind="show" id="nmQ-3u-FBi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m7t-jG-50z">
+                                <rect key="frame" x="20" y="257" width="374" height="67"/>
+                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="67" id="XrJ-nV-K5d"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                <state key="normal" title="Students">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="qKm-dA-Fjh" kind="show" id="zMg-7X-lqu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Jp-Wu-APO">
+                                <rect key="frame" x="20" y="332" width="374" height="67"/>
+                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="67" id="MDC-lZ-5f0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                <state key="normal" title="Faculties">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="GhF-9o-i79" kind="show" id="zso-4E-8Nb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="JU1-o7-NN6"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="JU1-o7-NN6" firstAttribute="trailing" secondItem="m7t-jG-50z" secondAttribute="trailing" constant="20" id="3sn-X2-4p7"/>
+                            <constraint firstItem="JU1-o7-NN6" firstAttribute="trailing" secondItem="6Jp-Wu-APO" secondAttribute="trailing" constant="20" id="64b-Lj-iUp"/>
+                            <constraint firstItem="JU1-o7-NN6" firstAttribute="trailing" secondItem="rHm-Qr-vdu" secondAttribute="trailing" constant="20" id="CNs-uA-g8R"/>
+                            <constraint firstItem="m7t-jG-50z" firstAttribute="leading" secondItem="JU1-o7-NN6" secondAttribute="leading" constant="20" id="CaK-Vj-apJ"/>
+                            <constraint firstItem="Ibx-lK-cxO" firstAttribute="leading" secondItem="JU1-o7-NN6" secondAttribute="leading" constant="20" id="IdP-bR-SCi"/>
+                            <constraint firstItem="6Jp-Wu-APO" firstAttribute="leading" secondItem="JU1-o7-NN6" secondAttribute="leading" constant="20" id="J5k-I0-DHq"/>
+                            <constraint firstItem="rHm-Qr-vdu" firstAttribute="leading" secondItem="JU1-o7-NN6" secondAttribute="leading" constant="20" id="Q98-M6-ndD"/>
+                            <constraint firstItem="Ibx-lK-cxO" firstAttribute="top" secondItem="JU1-o7-NN6" secondAttribute="top" constant="19" id="U6G-Qu-7IO"/>
+                            <constraint firstItem="JU1-o7-NN6" firstAttribute="trailing" secondItem="Ibx-lK-cxO" secondAttribute="trailing" constant="20" id="f85-OJ-MjW"/>
+                            <constraint firstItem="m7t-jG-50z" firstAttribute="top" secondItem="rHm-Qr-vdu" secondAttribute="bottom" constant="8" symbolic="YES" id="hZ8-Hn-nli"/>
+                            <constraint firstItem="6Jp-Wu-APO" firstAttribute="top" secondItem="m7t-jG-50z" secondAttribute="bottom" constant="8" symbolic="YES" id="nTo-ht-h57"/>
+                            <constraint firstItem="rHm-Qr-vdu" firstAttribute="top" secondItem="Ibx-lK-cxO" secondAttribute="bottom" constant="8" symbolic="YES" id="yq5-By-zzt"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="91G-7Q-thf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tNT-xH-H9d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6667" y="78"/>
+        </scene>
+        <!--About US-->
+        <scene sceneID="t10-eE-HDN">
+            <objects>
+                <viewController id="tPM-Qa-b95" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XPG-ws-yWy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DHU-uJ-ejo">
+                                <rect key="frame" x="20" y="111" width="374" height="67"/>
+                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="67" id="Cgx-Te-rpn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                <state key="normal" title="Rector's Welcome Message">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="wfb-qv-Q3H" kind="show" id="LXm-lb-FUm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PWW-Uy-sDG">
+                                <rect key="frame" x="20" y="186" width="374" height="67"/>
+                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="67" id="mFt-J6-Pwa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                <state key="normal" title="Vision, Mission and Goals">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Xaz-QW-2Oy" kind="show" id="hWd-N4-1KM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MN8-1J-pmL">
+                                <rect key="frame" x="20" y="261" width="374" height="67"/>
+                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="67" id="vJO-zk-1ee"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                <state key="normal" title="Endowment Fund">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="zKF-IP-WvC" kind="show" id="Ujw-fV-SW1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I45-ga-q9b">
+                                <rect key="frame" x="20" y="336" width="374" height="67"/>
+                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="67" id="95k-zz-6Dd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                <state key="normal" title="Alumni Association">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="XgV-3G-EeJ" kind="show" id="KgG-Yz-7RA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Kdj-9k-xWO"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Kdj-9k-xWO" firstAttribute="trailing" secondItem="I45-ga-q9b" secondAttribute="trailing" constant="20" id="C9k-to-fzx"/>
+                            <constraint firstItem="I45-ga-q9b" firstAttribute="top" secondItem="MN8-1J-pmL" secondAttribute="bottom" constant="8" symbolic="YES" id="DmA-sb-fNL"/>
+                            <constraint firstItem="DHU-uJ-ejo" firstAttribute="top" secondItem="Kdj-9k-xWO" secondAttribute="top" constant="23" id="J5r-yr-34Z"/>
+                            <constraint firstItem="DHU-uJ-ejo" firstAttribute="leading" secondItem="Kdj-9k-xWO" secondAttribute="leading" constant="20" id="Vas-mx-V94"/>
+                            <constraint firstItem="PWW-Uy-sDG" firstAttribute="top" secondItem="DHU-uJ-ejo" secondAttribute="bottom" constant="8" symbolic="YES" id="Xnz-P0-3MV"/>
+                            <constraint firstItem="PWW-Uy-sDG" firstAttribute="leading" secondItem="Kdj-9k-xWO" secondAttribute="leading" constant="20" id="bfZ-XR-Lgb"/>
+                            <constraint firstItem="MN8-1J-pmL" firstAttribute="top" secondItem="PWW-Uy-sDG" secondAttribute="bottom" constant="8" symbolic="YES" id="bm7-Xb-qar"/>
+                            <constraint firstItem="Kdj-9k-xWO" firstAttribute="trailing" secondItem="PWW-Uy-sDG" secondAttribute="trailing" constant="20" id="hNw-ZD-cof"/>
+                            <constraint firstItem="MN8-1J-pmL" firstAttribute="leading" secondItem="Kdj-9k-xWO" secondAttribute="leading" constant="20" id="iaT-29-xDu"/>
+                            <constraint firstItem="Kdj-9k-xWO" firstAttribute="trailing" secondItem="DHU-uJ-ejo" secondAttribute="trailing" constant="20" id="je4-KV-NLz"/>
+                            <constraint firstItem="Kdj-9k-xWO" firstAttribute="trailing" secondItem="MN8-1J-pmL" secondAttribute="trailing" constant="20" id="lQE-kg-OUO"/>
+                            <constraint firstItem="I45-ga-q9b" firstAttribute="leading" secondItem="Kdj-9k-xWO" secondAttribute="leading" constant="20" id="wmf-JP-oCg"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="About US" id="Q7k-Co-Obb"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bes-Qv-Hr4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3300" y="1022"/>
+        </scene>
+        <!--Admission-->
+        <scene sceneID="y4b-Gf-dSe">
+            <objects>
+                <viewController id="kCO-1e-NFV" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="akl-Zk-zNE">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FF0-FB-ZwW">
+                                <rect key="frame" x="20" y="108" width="374" height="67"/>
+                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="67" id="qTA-G1-Zfv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                <state key="normal" title="Undergraduate">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="vtT-m4-dbE" kind="show" id="0p2-le-lrh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g3H-IN-8fK">
+                                <rect key="frame" x="20" y="183" width="374" height="67"/>
+                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="67" id="ty4-21-WdC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                <state key="normal" title="Graduate">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="frm-Ez-NZp" kind="show" id="3pt-4K-YaL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZpN-oP-07k">
+                                <rect key="frame" x="20" y="258" width="374" height="67"/>
+                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="67" id="NEv-oX-l5w"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                <state key="normal" title="PhD">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="G7m-bA-qMl" kind="show" id="DpM-Sr-NcV"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="HA8-06-IcG"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ZpN-oP-07k" firstAttribute="leading" secondItem="HA8-06-IcG" secondAttribute="leading" constant="20" id="IY8-CY-5Kl"/>
+                            <constraint firstItem="HA8-06-IcG" firstAttribute="trailing" secondItem="g3H-IN-8fK" secondAttribute="trailing" constant="20" id="JqO-g3-5pG"/>
+                            <constraint firstItem="ZpN-oP-07k" firstAttribute="top" secondItem="g3H-IN-8fK" secondAttribute="bottom" constant="8" symbolic="YES" id="LJg-5z-pf1"/>
+                            <constraint firstItem="FF0-FB-ZwW" firstAttribute="leading" secondItem="HA8-06-IcG" secondAttribute="leading" constant="20" id="Lts-Ku-sXm"/>
+                            <constraint firstItem="FF0-FB-ZwW" firstAttribute="top" secondItem="HA8-06-IcG" secondAttribute="top" constant="20" id="QfU-G5-WrW"/>
+                            <constraint firstItem="g3H-IN-8fK" firstAttribute="leading" secondItem="HA8-06-IcG" secondAttribute="leading" constant="20" id="RCE-ne-7vE"/>
+                            <constraint firstItem="g3H-IN-8fK" firstAttribute="top" secondItem="FF0-FB-ZwW" secondAttribute="bottom" constant="8" symbolic="YES" id="THB-tT-WVT"/>
+                            <constraint firstItem="HA8-06-IcG" firstAttribute="trailing" secondItem="ZpN-oP-07k" secondAttribute="trailing" constant="20" id="nsK-Cb-Fvs"/>
+                            <constraint firstItem="HA8-06-IcG" firstAttribute="trailing" secondItem="FF0-FB-ZwW" secondAttribute="trailing" constant="20" id="xOv-wG-ZL0"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Admission" id="1cv-uC-v3n"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1v3-In-dRM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5880" y="1022"/>
+        </scene>
+        <!--Students-->
+        <scene sceneID="3kL-4x-woh">
+            <objects>
+                <viewController id="qKm-dA-Fjh" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Qsp-wJ-VgW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g3U-VO-uZ1">
+                                <rect key="frame" x="20" y="111" width="374" height="67"/>
+                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="67" id="mQW-ui-w44"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                <state key="normal" title="REMOTE EDUCATION">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="o1F-Rz-qvK" kind="show" id="Tht-ab-sZ9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VM6-jJ-vra">
+                                <rect key="frame" x="20" y="186" width="374" height="67"/>
+                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="67" id="5oi-Q6-Xhh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                <state key="normal" title="Student Dormitory">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="j5i-Cc-Gyf" kind="show" id="d0c-QX-oFc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ot-aN-q3u">
+                                <rect key="frame" x="20" y="261" width="374" height="67"/>
+                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="67" id="yyC-9i-8eC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                <state key="normal" title="Gift Shop">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="h2q-GS-nBv" kind="show" id="b9d-By-2eJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Sb4-Vc-roP"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Sb4-Vc-roP" firstAttribute="trailing" secondItem="g3U-VO-uZ1" secondAttribute="trailing" constant="20" id="5xf-je-lSL"/>
+                            <constraint firstItem="VM6-jJ-vra" firstAttribute="top" secondItem="g3U-VO-uZ1" secondAttribute="bottom" constant="8" symbolic="YES" id="9XT-qq-9n2"/>
+                            <constraint firstItem="VM6-jJ-vra" firstAttribute="leading" secondItem="Sb4-Vc-roP" secondAttribute="leading" constant="20" id="A33-K0-ngh"/>
+                            <constraint firstItem="g3U-VO-uZ1" firstAttribute="top" secondItem="Sb4-Vc-roP" secondAttribute="top" constant="23" id="I4n-mM-5NW"/>
+                            <constraint firstItem="3ot-aN-q3u" firstAttribute="leading" secondItem="Sb4-Vc-roP" secondAttribute="leading" constant="20" id="Ipv-nj-sot"/>
+                            <constraint firstItem="Sb4-Vc-roP" firstAttribute="trailing" secondItem="3ot-aN-q3u" secondAttribute="trailing" constant="20" id="glT-nF-8Dq"/>
+                            <constraint firstItem="Sb4-Vc-roP" firstAttribute="trailing" secondItem="VM6-jJ-vra" secondAttribute="trailing" constant="20" id="hIL-kZ-BdO"/>
+                            <constraint firstItem="g3U-VO-uZ1" firstAttribute="leading" secondItem="Sb4-Vc-roP" secondAttribute="leading" constant="20" id="iZp-RJ-JMA"/>
+                            <constraint firstItem="3ot-aN-q3u" firstAttribute="top" secondItem="VM6-jJ-vra" secondAttribute="bottom" constant="8" symbolic="YES" id="mHJ-bf-aj9"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Students" id="VgT-cl-7r0"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5UI-7m-zRh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8310" y="1022"/>
+        </scene>
+        <!--Faculties-->
+        <scene sceneID="9Q8-Wl-JdY">
+            <objects>
+                <viewController id="GhF-9o-i79" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="r11-NI-PqL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8jf-Cc-3Z5">
+                                <rect key="frame" x="20" y="110" width="374" height="67"/>
+                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="67" id="UhI-Hp-oFp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                <state key="normal" title="FIT">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Q8a-6z-rRl" kind="show" id="7FP-CU-wYR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MkR-Kf-K8J">
+                                <rect key="frame" x="20" y="185" width="374" height="67"/>
+                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="67" id="Y1h-h9-cvX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                <state key="normal" title="Business school">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="d0V-w0-yen" kind="show" id="45i-oJ-Qh6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O4B-vZ-6uK">
+                                <rect key="frame" x="20" y="260" width="374" height="67"/>
+                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="67" id="dgJ-xJ-bYd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                <state key="normal" title="ISE">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="TzJ-tQ-1fK" kind="show" id="tmH-Rp-gYZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="XDD-RT-RJ9"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="8jf-Cc-3Z5" firstAttribute="top" secondItem="XDD-RT-RJ9" secondAttribute="top" constant="22" id="AgR-Bu-MXS"/>
+                            <constraint firstItem="8jf-Cc-3Z5" firstAttribute="leading" secondItem="XDD-RT-RJ9" secondAttribute="leading" constant="20" id="VFV-8J-Br8"/>
+                            <constraint firstItem="MkR-Kf-K8J" firstAttribute="leading" secondItem="XDD-RT-RJ9" secondAttribute="leading" constant="20" id="bbS-ep-MrX"/>
+                            <constraint firstItem="XDD-RT-RJ9" firstAttribute="trailing" secondItem="O4B-vZ-6uK" secondAttribute="trailing" constant="20" id="cO1-TC-DPT"/>
+                            <constraint firstItem="MkR-Kf-K8J" firstAttribute="top" secondItem="8jf-Cc-3Z5" secondAttribute="bottom" constant="8" symbolic="YES" id="hIU-kJ-kQk"/>
+                            <constraint firstItem="XDD-RT-RJ9" firstAttribute="trailing" secondItem="MkR-Kf-K8J" secondAttribute="trailing" constant="20" id="hoI-9o-nXC"/>
+                            <constraint firstItem="O4B-vZ-6uK" firstAttribute="leading" secondItem="XDD-RT-RJ9" secondAttribute="leading" constant="20" id="iy7-SO-EIQ"/>
+                            <constraint firstItem="XDD-RT-RJ9" firstAttribute="trailing" secondItem="8jf-Cc-3Z5" secondAttribute="trailing" constant="20" id="k6J-Er-XcK"/>
+                            <constraint firstItem="O4B-vZ-6uK" firstAttribute="top" secondItem="MkR-Kf-K8J" secondAttribute="bottom" constant="8" symbolic="YES" id="lVU-LK-3XH"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Faculties" id="ol4-p4-cAo"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v1Q-tM-BEV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="10586" y="1022"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="eTn-IY-iAd">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="aFS-nu-leM" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="QFV-O0-lvt">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="52U-1J-5wl"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Ub-qb-DPW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="78.348214285714278"/>
+        </scene>
+        <!--OLYMPIAD KBTU-->
+        <scene sceneID="6IV-EG-Y6e">
+            <objects>
+                <viewController id="47Q-s1-5r7" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xoT-9e-cQo">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3OR-fT-GhU">
+                                <rect key="frame" x="20" y="360" width="374" height="345"/>
+                                <string key="text">Dear students and college graduates! We are pleased to announce to you the holding of the KBTU Republican Subject Olympiad among among students in grades 10-12 and college graduates! (citizens of the Republic of Kazakhstan).
+The Olympiad will be held in five areas:
+- Information and communication technologies
+- Business and management
+- Manufacturing and processing industries
+- Marine transport and technology
+- Chemical engineering and processes.
+The winners of the Olympiad will receive GRANTS and DISCOUNTS for studying at KBTU!
+Format: Online
+Round 1: March 11, 2021
+Round 2: March 17, 2021</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="olimp2021en" translatesAutoresizingMaskIntoConstraints="NO" id="g9x-oE-ZJo">
+                                <rect key="frame" x="20" y="110" width="374" height="227"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="374" id="HEJ-Y4-Jy5"/>
+                                    <constraint firstAttribute="height" constant="227" id="ot0-VL-89H"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="c2L-Ma-b6h"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="g9x-oE-ZJo" firstAttribute="leading" secondItem="c2L-Ma-b6h" secondAttribute="leading" constant="20" id="Bzg-so-vlP"/>
+                            <constraint firstItem="c2L-Ma-b6h" firstAttribute="trailing" secondItem="3OR-fT-GhU" secondAttribute="trailing" constant="20" id="Hat-E4-r9N"/>
+                            <constraint firstItem="3OR-fT-GhU" firstAttribute="top" secondItem="g9x-oE-ZJo" secondAttribute="bottom" constant="23" id="fcO-m7-UtJ"/>
+                            <constraint firstItem="c2L-Ma-b6h" firstAttribute="trailing" secondItem="g9x-oE-ZJo" secondAttribute="trailing" constant="20" id="hHR-bQ-Yfl"/>
+                            <constraint firstItem="g9x-oE-ZJo" firstAttribute="top" secondItem="c2L-Ma-b6h" secondAttribute="top" constant="22" id="jHA-GP-7lc"/>
+                            <constraint firstItem="3OR-fT-GhU" firstAttribute="leading" secondItem="c2L-Ma-b6h" secondAttribute="leading" constant="20" id="p7w-QN-ZXM"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="OLYMPIAD KBTU" id="x5E-Sp-CoG"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eFh-19-51K" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="50.724637681159422" y="1021.875"/>
+        </scene>
+        <!--Mentorship-->
+        <scene sceneID="Bu7-xr-xV9">
+            <objects>
+                <viewController id="YK0-pN-4M9" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZZS-F6-yJh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="50" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cpr-gd-CIY">
+                                <rect key="frame" x="20" y="108" width="374" height="751"/>
+                                <string key="text">Mentorship program is a project that reveals the mentoring potential of graduates and students. The KBTU Alumni Association becomes a link between graduates of different generations and students. Students can take the experience of graduates, and professionals can share career advice and expert knowledge with young professionals.
+ 
+Mentorship program of the KBTU Alumni Association was created on a voluntary basis in order to:
+organize communication between generations of successful graduates and students;
+increase the loyalty of a society in terms of our university;
+give the opportunity to former students of KBTU to be involved in the life of the university;
+help young, talented students achieve their goals;
+create a new community of professionals;
+create cross-functional multidisciplinary teams to create MVP, FIT + FEF + FEOGI
+ 
+What does the program give the student?
+Understanding the situation on the labor market
+Improving the quality of education
+A sense of confidence and an understanding of how to build a career, develop own business
+A positive example of how to achieve goals and overcome difficulties
+A boost of motivation and self-confidence
+Professional skills and soft-skills
+Useful acquaintances
+Systematically and consciously build the trajectory of their own development and employment</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="RcJ-eD-NcD"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Cpr-gd-CIY" firstAttribute="leading" secondItem="RcJ-eD-NcD" secondAttribute="leading" constant="20" id="RuM-Di-OVU"/>
+                            <constraint firstItem="Cpr-gd-CIY" firstAttribute="top" secondItem="RcJ-eD-NcD" secondAttribute="top" constant="20" id="eHz-tS-X00"/>
+                            <constraint firstItem="RcJ-eD-NcD" firstAttribute="trailing" secondItem="Cpr-gd-CIY" secondAttribute="trailing" constant="20" id="quw-ym-LEp"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Mentorship" id="JLq-ok-anw"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ShN-BV-dv0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1385.5072463768117" y="1021.875"/>
+        </scene>
+        <!--First year students study-->
+        <scene sceneID="YhQ-mO-41d">
+            <objects>
+                <viewController id="Gzw-1S-WaO" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="93f-7R-VDt">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="50" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2q7-Im-Ipi">
+                                <rect key="frame" x="20" y="108" width="374" height="710.5"/>
+                                <string key="text">Dear first year students, in the spring semester 2020-2021 academic year classes will be held in a combined format. 70% of classes (lectures) will be online and 30% (practical, seminars, laboratory) will be held in KBTU buildings on schedule in compliance with sanitary and epidemiological standards.
+ Detailed information is available on the Uninet portal https://wsp.kbtu.kz/
+ 
+Foreign students who have not previously entered Kazakhstan can contact the Department of Internationalization and Strategic Development b.stybaev@kbtu.kz to apply for a permit to enter the country. Negative PCR test (72 hours) and permission from the interdepartmental commission are mandatory, with the exception of some countries.
+ 
+The combined format of classes is compulsory for all students of the 1st (course) year of study, except for students with signs of COVID-19, pulmonary pneumonia or other viral diseases. During the period of treatment and recovery, these students can temporarily continue their studies in a distance format, after the permission of the Quality Assurance Committee. In this case, you need to write an application, attaching supporting documents (available on the Uninet portal https://wsp.kbtu.kz/ module "Applications") and send it to medcenter@kbtu.kz no later than 3 days before the start of the combined learning format (depending on the schedule according to faculties).</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="kHV-Iq-Iov"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                        <constraints>
+                            <constraint firstItem="2q7-Im-Ipi" firstAttribute="leading" secondItem="kHV-Iq-Iov" secondAttribute="leading" constant="20" id="27a-ho-v8x"/>
+                            <constraint firstItem="kHV-Iq-Iov" firstAttribute="trailing" secondItem="2q7-Im-Ipi" secondAttribute="trailing" constant="20" id="dUM-sv-C1G"/>
+                            <constraint firstItem="2q7-Im-Ipi" firstAttribute="top" secondItem="kHV-Iq-Iov" secondAttribute="top" constant="20" id="jRI-lA-Rfz"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="First year students study" id="e7X-Bj-Ni3"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bSK-cM-azk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2053.6231884057975" y="1021.875"/>
+        </scene>
+        <!--Welcome message-->
+        <scene sceneID="9sF-Jw-3fA">
+            <objects>
+                <viewController id="wfb-qv-Q3H" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="x6v-kx-Uta">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="50" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YTQ-Pa-H3e">
+                                <rect key="frame" x="20" y="106" width="374" height="649.5"/>
+                                <string key="text">Dear Friends,
+Every year since 2009 Kazakh-British Technical University (KBTU) has been ranked the best technical university of Central Asia by the Independent Kazakh Quality Assurance Agency for Education (IQQA).We aspire to become one of the top entrepreneurial institutions in the Eurasian region. Our main goal is to contribute in Kazakhstan’s scientific, entrepreneurial and economic development by preparing highly qualified and trained scholars, scientists and professionals.
+We build bridges between science and society and between Kazakhstan and outer world in scientific, technical and business fields. It is a big challenge but we have confidence in our own capabilities and strengths; and also in the institutions, state bodies, scientific organizations and businesses with which we collaborate in our journey to excellence. Our interests stretch beyond merely one field. We work with a variety of partners, stakeholders in areas such as joint research projects and expertise exchanges.
+Innovation and creativity as well as curiosity and imagination of our scholars, experts and students have helped KBTU to produce excellent research and innovative projects. We perform scientific and technological tasks and resolve challenges through enquiry. We work hand in hand with regional businesses and industry to remain the best center of scientific and technical innovations in Central Asia.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="oy2-8c-VoN"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="oy2-8c-VoN" firstAttribute="trailing" secondItem="YTQ-Pa-H3e" secondAttribute="trailing" constant="20" id="GTc-yk-m3S"/>
+                            <constraint firstItem="YTQ-Pa-H3e" firstAttribute="leading" secondItem="oy2-8c-VoN" secondAttribute="leading" constant="20" id="Hr9-Tm-JXH"/>
+                            <constraint firstItem="YTQ-Pa-H3e" firstAttribute="top" secondItem="oy2-8c-VoN" secondAttribute="top" constant="18" id="glA-3c-Hwe"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Welcome message" id="sFq-10-6u5"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A8X-og-g7W" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2279.7101449275365" y="1794.6428571428571"/>
+        </scene>
+        <!--Vision, mission, goals-->
+        <scene sceneID="vkH-gT-HfE">
+            <objects>
+                <viewController id="Xaz-QW-2Oy" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IzQ-49-sO5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DJI_0615" translatesAutoresizingMaskIntoConstraints="NO" id="ehB-of-lmU">
+                                <rect key="frame" x="20" y="107" width="374" height="218"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="218" id="4pr-ya-xkd"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="50" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ahd-3D-wvj">
+                                <rect key="frame" x="20" y="333" width="374" height="487"/>
+                                <string key="text">VISION
+We will be on par with the fast and unprecedented technological and scientific advances by offering the latest mathematical knowledge and skills that ensure problem solving, accuracy, relevance and excellence.
+MISSION
+To prepare and train accurate and efficient problem solvers who will have the core knowledge of mathematical concepts and the skills to understand and apply their core knowledge in solving problems in variety of situations. We ensure creating an environment where professors and students have numerous interaction and problem solving opportunities through innovative teaching, learning and research methods.  
+Strategic Goals:
+The Faculty seeks to improve the quality of the educational process by introducing modern methods and methods of teaching, updating and creating new mathematical courses that take into account the needs of the developing oil and gas industry of the Republic of Kazakhstan.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="B7t-2J-Qky"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Ahd-3D-wvj" firstAttribute="top" secondItem="ehB-of-lmU" secondAttribute="bottom" constant="8" symbolic="YES" id="1cw-48-QKn"/>
+                            <constraint firstItem="B7t-2J-Qky" firstAttribute="trailing" secondItem="ehB-of-lmU" secondAttribute="trailing" constant="20" id="9yT-xQ-eYj"/>
+                            <constraint firstItem="B7t-2J-Qky" firstAttribute="trailing" secondItem="Ahd-3D-wvj" secondAttribute="trailing" constant="20" id="FL9-7a-7av"/>
+                            <constraint firstItem="ehB-of-lmU" firstAttribute="leading" secondItem="B7t-2J-Qky" secondAttribute="leading" constant="20" id="L3K-pM-AxU"/>
+                            <constraint firstItem="Ahd-3D-wvj" firstAttribute="leading" secondItem="B7t-2J-Qky" secondAttribute="leading" constant="20" id="Tss-Oe-NcG"/>
+                            <constraint firstItem="ehB-of-lmU" firstAttribute="top" secondItem="B7t-2J-Qky" secondAttribute="top" constant="19" id="VxL-3a-Yhx"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Vision, mission, goals" id="mW1-GA-qJt"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g6v-oR-tu8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2953.6231884057975" y="1794.6428571428571"/>
+        </scene>
+        <!--Endowment Fund-->
+        <scene sceneID="PnN-UU-Shr">
+            <objects>
+                <viewController id="zKF-IP-WvC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oXG-vn-hMP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="50" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h0A-4m-BeK">
+                                <rect key="frame" x="20" y="228" width="374" height="446.5"/>
+                                <string key="text">The KBTU Endowment Corporate Foundation (KBTU-ECF) is a non-profit organization of the Kazakh-British Technical University Joint-Stock Company. It was established by a decision of the KBTU Board of Directors under the Protocol No. 1 dated February 28, 2018.
+In its activities, the KBTU-ECF is guided by its goals aimed at developing and promoting educational, scientific, cultural, sports and charitable activities and cordial environment at the KBTU.
+ 
+The main activities of the KBTU-ECF are:
+The development and maintenance of the public sphere
+Allocation of grants/scholarships
+Expansion in the range of research and innovation works
+Launch of new projects
+Raising and updating the KBTU Library Fund
+Participation in international conferences
+ Infrastructure upgrades at the KBTU</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fond" translatesAutoresizingMaskIntoConstraints="NO" id="P5U-3O-JvI">
+                                <rect key="frame" x="20" y="108" width="374" height="112"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="112" id="dyb-g8-lf6"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Mn6-Zu-iKe"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="h0A-4m-BeK" firstAttribute="leading" secondItem="Mn6-Zu-iKe" secondAttribute="leading" constant="20" id="3Zx-KZ-uk0"/>
+                            <constraint firstItem="Mn6-Zu-iKe" firstAttribute="trailing" secondItem="h0A-4m-BeK" secondAttribute="trailing" constant="20" id="9ib-1P-sth"/>
+                            <constraint firstItem="Mn6-Zu-iKe" firstAttribute="trailing" secondItem="P5U-3O-JvI" secondAttribute="trailing" constant="20" id="HRW-0M-GyL"/>
+                            <constraint firstItem="P5U-3O-JvI" firstAttribute="top" secondItem="Mn6-Zu-iKe" secondAttribute="top" constant="20" id="WX4-Oc-7qP"/>
+                            <constraint firstItem="P5U-3O-JvI" firstAttribute="leading" secondItem="Mn6-Zu-iKe" secondAttribute="leading" constant="20" id="YMV-tQ-Bf9"/>
+                            <constraint firstItem="h0A-4m-BeK" firstAttribute="top" secondItem="P5U-3O-JvI" secondAttribute="bottom" constant="8" symbolic="YES" id="ZxU-LV-blr"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Endowment Fund" id="rgp-XV-k6l"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cv5-zW-Odx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3640.579710144928" y="1794.6428571428571"/>
+        </scene>
+        <!--Alumni Association-->
+        <scene sceneID="kwd-CU-VHu">
+            <objects>
+                <viewController id="XgV-3G-EeJ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Oip-uT-G1d">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_5410" translatesAutoresizingMaskIntoConstraints="NO" id="uko-Ij-Jm3">
+                                <rect key="frame" x="20" y="108" width="374" height="198"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="198" id="yNz-hy-ioa"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="50" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PLk-Wu-mDb">
+                                <rect key="frame" x="20" y="314" width="374" height="385.5"/>
+                                <string key="text">Welcome to the KBTU Alumni Association webpage. KBTU graduates are recognized internationally among the best qualified and skilled scientists, technicians and professionals.  We take pride to inform that KBTU graduates work for top brands such as Google, Microsoft, Facebook, Twitter, Booking.com and many more leading IT companies in various parts of the world, including the Silicon Valley.  National and international oil and gas companies such as KazMunaiGas, TCO, NCOC, Schlumberger, Halliburton, Baker Hughes, Karachaganak Petroleum Operating, Eni have been hiring our graduates. Successful Kazakhstani and international businesses will continue to hire KBTU graduates because our graduates are competent specialists and excellent performers who are capable of delivering superb results and services.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ube-b6-FKu"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="uko-Ij-Jm3" firstAttribute="top" secondItem="ube-b6-FKu" secondAttribute="top" constant="20" id="4ra-ID-eok"/>
+                            <constraint firstItem="ube-b6-FKu" firstAttribute="trailing" secondItem="uko-Ij-Jm3" secondAttribute="trailing" constant="20" id="JUo-SJ-hYT"/>
+                            <constraint firstItem="PLk-Wu-mDb" firstAttribute="top" secondItem="uko-Ij-Jm3" secondAttribute="bottom" constant="8" symbolic="YES" id="UE8-3J-XWY"/>
+                            <constraint firstItem="ube-b6-FKu" firstAttribute="trailing" secondItem="PLk-Wu-mDb" secondAttribute="trailing" constant="20" id="XK5-B2-WYA"/>
+                            <constraint firstItem="PLk-Wu-mDb" firstAttribute="leading" secondItem="ube-b6-FKu" secondAttribute="leading" constant="20" id="cRA-mb-IfI"/>
+                            <constraint firstItem="uko-Ij-Jm3" firstAttribute="leading" secondItem="ube-b6-FKu" secondAttribute="leading" constant="20" id="ssF-0v-kDa"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Alumni Association" id="icz-s1-wDC"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TpW-Z6-Dgh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4318.840579710145" y="1794.6428571428571"/>
+        </scene>
+        <!--Undergraduate-->
+        <scene sceneID="hV0-M8-5rW">
+            <objects>
+                <viewController id="vtT-m4-dbE" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BQF-cM-3oQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="50" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vs3-zX-ndV">
+                                <rect key="frame" x="20" y="106" width="374" height="730.5"/>
+                                <string key="text">Bachelor's Programs
+We offer bachelor’s degree programs in the following areas.
+ 
+1: Faculty of Energy and Oil and Gas
+Petroleum Engineering
+ 
+2: Faculty of Geology and Exploration
+Geology and Exploration of Mineral Resources
+ 
+3: Faculty of Information Technologies (FIT)
+Information Systems
+Automation and Control
+Computer Systems and Software
+ 
+4: The Center of Chemical Engineering
+Chemical Technologies of Organic Substances
+ 
+5: International School of Economics (ISE)
+Mathematics and Economics
+Economics
+Finance
+ 
+6: KBS Business School
+Management
+Finance
+Accounting and Auditing
+Project Management
+Economics, Society and Technology
+Marketing
+ 
+7: School of Mathematics and Cybernetics
+Mathematics and Computer
+ 
+8: Kazakhstan Maritime Academy (KMA)
+Marine Technique and Technology</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="E45-Ht-Vbj"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vs3-zX-ndV" firstAttribute="leading" secondItem="E45-Ht-Vbj" secondAttribute="leading" constant="20" id="epl-ZW-7Kx"/>
+                            <constraint firstItem="E45-Ht-Vbj" firstAttribute="trailing" secondItem="vs3-zX-ndV" secondAttribute="trailing" constant="20" id="hC0-gA-qvg"/>
+                            <constraint firstItem="vs3-zX-ndV" firstAttribute="top" secondItem="E45-Ht-Vbj" secondAttribute="top" constant="18" id="jxz-xL-vQB"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Undergraduate" id="wEO-UC-eZk"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HQS-n0-QWT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5186.9565217391309" y="1794.6428571428571"/>
+        </scene>
+        <!--Graduate-->
+        <scene sceneID="f8H-vR-k3I">
+            <objects>
+                <viewController id="frm-Ez-NZp" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YE8-a8-SId">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="50" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zaW-Bh-nii">
+                                <rect key="frame" x="20" y="101" width="374" height="690"/>
+                                <string key="text">Kazak British Technical University offers a range of graduate programs aimed at training qualified specialists who will be awarded the Master’s degree upon successful completion. The programs vary in the requirements and academic terms of study.
+All KBTU graduate programs require that applicants must have earned a bachelor’s degree or its equivalent from a college or university. In compliance with Kazakhstan legislature the degrees granted by foreign universities must be nostrificated within the first academic year.
+Applicants interested in graduate education are to submit the required documents to the Admission Committee or through online information portal. Government services in electronic form are available through the portal only to those applicants who have obtained a digital signature.   Enrollment of Master School applicants is based on the Complex Test (hereinafter CT) results out of 150-point rating system that should be not less than overall 50 points, including the following points:
+at least 7 points in the foreign language section;
+according to the Major of educational programs group:
+at least 7 points, with the choice of one correct answer,
+at least 7 points with the choice of one or more correct answers and
+not less than 7 points in the Learner Readiness Test.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="d8G-5w-evw"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="zaW-Bh-nii" firstAttribute="leading" secondItem="d8G-5w-evw" secondAttribute="leading" constant="20" id="NPv-p6-IdA"/>
+                            <constraint firstItem="d8G-5w-evw" firstAttribute="trailing" secondItem="zaW-Bh-nii" secondAttribute="trailing" constant="20" id="UHH-dF-8Ji"/>
+                            <constraint firstItem="zaW-Bh-nii" firstAttribute="top" secondItem="d8G-5w-evw" secondAttribute="top" constant="13" id="ZPK-28-1Gj"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Graduate" id="zxI-oZ-Vbq"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ptb-O4-shL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5885.507246376812" y="1794.6428571428571"/>
+        </scene>
+        <!--PhD-->
+        <scene sceneID="uHv-Ny-KI1">
+            <objects>
+                <viewController id="G7m-bA-qMl" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xf4-89-khz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="50" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1vJ-bq-N3f">
+                                <rect key="frame" x="20" y="101" width="374" height="690"/>
+                                <string key="text">Kazakh-British Technical University provides training for PhD students based on Master’s degree educational programs.
+Admission requirements to PhD programs of KBTU are:
+a Master’s degree
+a certificate upon completion of pedagogical sessions for persons with a master's degree in a specialized field
+a Master’s degree or a diploma of higher vocational training equal in value to a Master’s degree for DBA applicants;
+at least one year work experience in the field
+KBTU accepts applications for groups of educational doctoral programs on the terms of training for the state educational order as part of targeted training and on paid basis at the expense of a student or other sources.  The authenticity of the submitted certificates is checked by the admissions committee.
+Persons who have graduated from foreign universities in the countries whose state or official language is English and have specialized accreditation of foreign accredited bodies included in the registers and (or) associations of accreditation bodies of the member states of the Organization for Economic Cooperation and Development (OECD) during 5 years do not provide international certificates confirming knowledge of a foreign language in accordance with the common-European competencies (standards) of knowledge of a foreign language specified in this paragraph.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="E9z-Uw-Cfc"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="1vJ-bq-N3f" firstAttribute="leading" secondItem="E9z-Uw-Cfc" secondAttribute="leading" constant="20" id="CmN-qF-Jmj"/>
+                            <constraint firstItem="1vJ-bq-N3f" firstAttribute="top" secondItem="E9z-Uw-Cfc" secondAttribute="top" constant="13" id="hRD-eN-bYz"/>
+                            <constraint firstItem="E9z-Uw-Cfc" firstAttribute="trailing" secondItem="1vJ-bq-N3f" secondAttribute="trailing" constant="20" id="t33-MI-uCZ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="PhD" id="rb6-yO-dUS"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q9Q-Rb-eOg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6571.0144927536239" y="1794.6428571428571"/>
+        </scene>
+        <!--REMOTE EDUCATION-->
+        <scene sceneID="NZ3-9N-XiY">
+            <objects>
+                <viewController id="o1F-Rz-qvK" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tIh-C9-Dv3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="50" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vu6-9S-t4H">
+                                <rect key="frame" x="20" y="104" width="374" height="487"/>
+                                <string key="text">Dear 1st year students (except for KMA cadets)! Our main priority is the health of every student, teacher and employee. The level of severity of quarantine restrictions depends on which zone each region is located in. As of today, there is no new provision from the chief sanitary doctor of Almaty and methodological recommendations from the Ministry of Education and Science of the Republic of Kazakhstan. In this regard, classes for first-year students in the spring semester will be held on schedule and will start online. Further changes in the study format will depend on the sanitary and epidemiological situation in the country and in Almaty. We expect that from March it will be possible to switch from online to a combined learning format. The dates of the changes will be informed to all 1st year students on timely basis via uninet and other communication channels.
+We remind you that for those students who do not have technical abilities to study online from home, or have problems with the Internet, they can move into the House of Master Program students and students.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="n8d-Z4-BCY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Vu6-9S-t4H" firstAttribute="leading" secondItem="n8d-Z4-BCY" secondAttribute="leading" constant="20" id="Zsf-gV-IQf"/>
+                            <constraint firstItem="Vu6-9S-t4H" firstAttribute="top" secondItem="n8d-Z4-BCY" secondAttribute="top" constant="16" id="b2J-pp-gVp"/>
+                            <constraint firstItem="n8d-Z4-BCY" firstAttribute="trailing" secondItem="Vu6-9S-t4H" secondAttribute="trailing" constant="20" id="qza-dB-IoW"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="REMOTE EDUCATION" id="nHC-Dg-P2p"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2R3-Uj-S0C" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7631.884057971015" y="1794.6428571428571"/>
+        </scene>
+        <!--Student Dormitory-->
+        <scene sceneID="kwX-km-bOC">
+            <objects>
+                <viewController id="j5i-Cc-Gyf" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FVY-lM-XcH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="50" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jnp-ze-D7L">
+                                <rect key="frame" x="20" y="104" width="374" height="710.5"/>
+                                <string key="text"> For non-resident and international students in need of housing, KBTU provides places in our state- of- art Student residence that comprises four large buildings that can house 852 students. It is not an ordinary student residence. It is like real home with very comfortable and clean rooms, sitting rooms, green open spaces in a quiet area. 
+   All the four buildings have excellent living conditions and superb sanitary services.  The buildings and residence sections include one, two, three and four bedrooms for undergraduate, postgraduate and doctoral students.  
+               Facilities:
+24-hours security
+All the student housing spots are under CCTV surveillance cameras and security personnel. Each building has its own entrance card non-identical to the rest.
+Wi-fi
+Rooms have Internet cables launched and wi-fi everywhere around the campus.
+2 cafes
+One for 12 seats, the other for 60 seats (the menu is prepared in consultation students)
+Library
+A library and separate reading rooms with a variety of literature and periodicals.
+Indoor and outdoor sports facilities
+Gym, on-campus football fields are available for students’ active free time-spending.
+Medical  rooms
+In case a student needs help whenever it is needed medical rooms are equipped with necessary provisions to get it on time.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="gXe-zj-je2"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="jnp-ze-D7L" firstAttribute="leading" secondItem="gXe-zj-je2" secondAttribute="leading" constant="20" id="52f-y1-gA6"/>
+                            <constraint firstItem="jnp-ze-D7L" firstAttribute="top" secondItem="gXe-zj-je2" secondAttribute="top" constant="16" id="rFd-Ul-7Pd"/>
+                            <constraint firstItem="gXe-zj-je2" firstAttribute="trailing" secondItem="jnp-ze-D7L" secondAttribute="trailing" constant="20" id="vF4-Jg-oZE"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Student Dormitory" id="3Bx-R6-sBO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6ZC-9D-aFs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8311.5942028985519" y="1794.6428571428571"/>
+        </scene>
+        <!--Gift Shop-->
+        <scene sceneID="FjD-m1-fbJ">
+            <objects>
+                <viewController id="h2q-GS-nBv" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aP1-AO-emO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="50" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nIH-z3-Ap0">
+                                <rect key="frame" x="20" y="105" width="374" height="264"/>
+                                <string key="text">University Gift Shop
+Have a walk around inside our gift shop to choose from a wide variety of KBTU brand products whether for your boss, colleagues or girlfriend, relatives and parents! Everything from t-shirts, sweatshirts, caps to office supplies, which are usually on high demand among students, can be found here at an affordable price. You can also stop by to print, copy or scan the materials you need.
+ We are right in the library hall from Abylai khan side. Come and see us! We are always happy to have you!</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_2214" translatesAutoresizingMaskIntoConstraints="NO" id="ckZ-pS-xJl">
+                                <rect key="frame" x="20" y="384" width="365" height="478"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="478" id="t5w-in-PfS"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="4Z8-yg-Iix"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="4Z8-yg-Iix" firstAttribute="trailing" secondItem="nIH-z3-Ap0" secondAttribute="trailing" constant="20" id="5VB-M1-gje"/>
+                            <constraint firstItem="4Z8-yg-Iix" firstAttribute="trailing" secondItem="ckZ-pS-xJl" secondAttribute="trailing" constant="29" id="8kM-EX-x0H"/>
+                            <constraint firstItem="nIH-z3-Ap0" firstAttribute="top" secondItem="4Z8-yg-Iix" secondAttribute="top" constant="17" id="Ijj-eu-BUO"/>
+                            <constraint firstItem="nIH-z3-Ap0" firstAttribute="leading" secondItem="4Z8-yg-Iix" secondAttribute="leading" constant="20" id="Y2q-wa-q2G"/>
+                            <constraint firstItem="ckZ-pS-xJl" firstAttribute="leading" secondItem="4Z8-yg-Iix" secondAttribute="leading" constant="20" id="d6c-gl-FVl"/>
+                            <constraint firstItem="ckZ-pS-xJl" firstAttribute="top" secondItem="nIH-z3-Ap0" secondAttribute="bottom" constant="15" id="n9c-To-wte"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Gift Shop" id="WMh-9q-4u3"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tDP-LN-maL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8986.9565217391319" y="1794.6428571428571"/>
+        </scene>
+        <!--FIT-->
+        <scene sceneID="gnL-Gs-6cE">
+            <objects>
+                <viewController id="Q8a-6z-rRl" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LFE-5w-w6y">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="50" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XhE-Of-07A">
+                                <rect key="frame" x="20" y="107" width="374" height="690"/>
+                                <string key="text">The Faculty of Information Technology (FIT) was established 17 years ago,  now, it is the largest Faculty of the Kazakh-British Technical University (KBTU). Thousand of our graduates are working in Kazakhstan and abroad and are connected to the FIT thanks to our very own specialization---Information Technologies. In fact, the FIT has become a very large family of like-minded and mutually connected people, who are highly qualified and skilled. These professionals are serving and participating in knowledge generation in various parts of the world and at the same time are contributing in the growth and development of the KBTU Faculty of Information Technology.  Students have central role in our teaching and learning philosophy; we treat students as responsible partners and strongly believe in the student empowerment. No matter how advanced educational programs, professors, laboratories, and environments are; without the full involvement and participation of students or future graduates; the transfer of knowledge and learning process will remain incomplete. That is why from the first day we try to instil in the student an understanding of responsibility for her/his own future, making it clear that the FIT and its resources are there to facilitate and assist the student. Teachers are mentors and guides, the benefits of the physical and human resources at the FIT are directly proportional to the level of diligence of the student. In short, everyone learns themselves; the FIT family is only to help.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Jed-EZ-N3f"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="XhE-Of-07A" firstAttribute="leading" secondItem="Jed-EZ-N3f" secondAttribute="leading" constant="20" id="7uM-Xv-ios"/>
+                            <constraint firstItem="Jed-EZ-N3f" firstAttribute="trailing" secondItem="XhE-Of-07A" secondAttribute="trailing" constant="20" id="8jQ-Va-NRk"/>
+                            <constraint firstItem="XhE-Of-07A" firstAttribute="top" secondItem="Jed-EZ-N3f" secondAttribute="top" constant="19" id="e6X-uq-dtp"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="FIT" id="q3Q-vT-atp"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hrh-XR-3iG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="9895.652173913044" y="1794.6428571428571"/>
+        </scene>
+        <!--Business school-->
+        <scene sceneID="Qk5-4F-L7K">
+            <objects>
+                <viewController id="d0V-w0-yen" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OrQ-s2-tK9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="50" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OF1-0J-jRy">
+                                <rect key="frame" x="20" y="102" width="374" height="629"/>
+                                <string key="text">The KBTU Business School has experienced tremendous development since the establishment of the University in 2001. We are proud of who we are today, what values we bring to the society and the development of future leaders of Kazakhstan. Being the leader school in business education in the country, we are continuously upgrading our content and delivery methods. 
+ 
+Our undergraduate and graduate programs are exclusively taught in English by top international and local faculty and are recognized by professional bodies such as CFA, ACCA, and CIMA. Furthermore, we are glad to announce that the KBTU Business School is candidate for the prestigious ACBSP accreditation by the American Accreditation Council. 
+ 
+Being a part of KBTU and having the vision for providing world class education and learning in the heart of Almaty, we are working hard on building the best quality partnerships with our individual and corporate partners both locally and internationally. For example, our students are exposed to international experience through exchange programs such as Erasmus+ and Abay-Verne. Moreover, the KBTU School is accredited by the  prestigious accreditation by the Accreditation Council for Business School and Programs (ACBSP). </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="i5e-gd-mEF"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="OF1-0J-jRy" firstAttribute="top" secondItem="i5e-gd-mEF" secondAttribute="top" constant="14" id="EQ2-wu-m9F"/>
+                            <constraint firstItem="i5e-gd-mEF" firstAttribute="trailing" secondItem="OF1-0J-jRy" secondAttribute="trailing" constant="20" id="L7j-mi-6Kh"/>
+                            <constraint firstItem="OF1-0J-jRy" firstAttribute="leading" secondItem="i5e-gd-mEF" secondAttribute="leading" constant="20" id="yDE-hf-BZ8"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Business school" id="B2V-go-q6v"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bCF-YZ-lK0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="10585.507246376812" y="1794.6428571428571"/>
+        </scene>
+        <!--ISE-->
+        <scene sceneID="UAP-6x-eAq">
+            <objects>
+                <viewController id="TzJ-tQ-1fK" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4VR-jq-tVv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="50" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eo7-rO-oi0">
+                                <rect key="frame" x="20" y="106" width="374" height="730.5"/>
+                                <string key="text">
+International School of Economics is a unique faculty of KBTU that has been a recognized teaching center of the University of London since 2005.  All our students study for the University of London degree under the academic direction of the London School of Economics (LSE). It means that the study materials for each course are developed by one of the top universities in social sciences in the world, which is also one of the institutions of the University of London.  Consequently, our students pass both internal exams of KBTU and external exams of the University of London.  
+World class faculty members with doctoral degrees from the best universities around the world are there to help you successfully complete your studies in ISE and achieve your goals. Our staff is committed to student success.
+ISE has been a place of outstanding scholarly activities and excellence for many years. We teach our students not only how to study and apply their knowledge but also to be leaders and critical thinkers. Our students are competitive in the global markets which is reflected in their placements both in international companies and top western universities. We are looking for ambitious and hardworking students!
+In 2020, ISE programs were extended to include a prestigious Data Science and Business Analytics program. This program is increasingly demanded in the modern workplace as data science analysis is expected to revolutionize our everyday life and change the social landscape.    
+On behalf of our faculty and staff let me welcome you in ISE, KBTU!</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="oeL-Ab-Rhp"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="eo7-rO-oi0" firstAttribute="top" secondItem="oeL-Ab-Rhp" secondAttribute="top" constant="18" id="0rX-jG-1gr"/>
+                            <constraint firstItem="oeL-Ab-Rhp" firstAttribute="trailing" secondItem="eo7-rO-oi0" secondAttribute="trailing" constant="20" id="MBX-hJ-6hs"/>
+                            <constraint firstItem="eo7-rO-oi0" firstAttribute="leading" secondItem="oeL-Ab-Rhp" secondAttribute="leading" constant="20" id="z40-7R-Q0Z"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="ISE" id="5tn-No-pN3"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dcj-mS-gps" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="11273.913043478262" y="1794.6428571428571"/>
+        </scene>
+        <!--Women Emprowerment-->
+        <scene sceneID="8wG-bB-IRG">
+            <objects>
+                <viewController id="D6A-i2-T6J" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UrY-fr-oqZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Women-Empowerment_header" translatesAutoresizingMaskIntoConstraints="NO" id="WHL-m6-Usx">
+                                <rect key="frame" x="20" y="110" width="374" height="87"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="87" id="91k-ht-bKQ"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BOQ-aH-lKN">
+                                <rect key="frame" x="20" y="205" width="374" height="162.5"/>
+                                <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                <string key="text">In 2020, a group of KBTU alumni founded leadership network (Women Empowerment@KBTU) with the goal to connect students, alumni, administrators and faculty of KBTU. Our ambition is to provide an arena for networking and a platform from which to address issues of particular concern to women in the KBTU community and beyond.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K9y-8r-7we">
+                                <rect key="frame" x="20" y="375" width="374" height="101.5"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <string key="text">MISSION STATEMENT
+Leadership Network at KBTU (WE@KBTU) is a non profit organization, based on KBTU, supported by the KBTU Alumni and KBTU Management</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ER-9J-Tkr">
+                                <rect key="frame" x="20" y="484" width="374" height="243.5"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">WE@KBTU aims to develop open, vibrant and equitable community of KBTU female students, alumni, mentors and supporters
+WE@KBTU celebrate diversity and inclusion in our network. We welcome interested in being part of, supporting and mentoring, of all races, mantional origins, sexual orientations and physical abilities.
+WE@KBTU would like to contribute to the acknowledgment of women’s contributions and leadership styles in various industries and across the world.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="8h3-BK-DeC"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="8h3-BK-DeC" firstAttribute="trailing" secondItem="WHL-m6-Usx" secondAttribute="trailing" constant="20" id="32N-O7-ovT"/>
+                            <constraint firstItem="8h3-BK-DeC" firstAttribute="trailing" secondItem="8ER-9J-Tkr" secondAttribute="trailing" constant="20" id="HJr-kc-HbP"/>
+                            <constraint firstItem="K9y-8r-7we" firstAttribute="top" secondItem="BOQ-aH-lKN" secondAttribute="bottom" constant="7.5" id="QR4-LK-cag"/>
+                            <constraint firstItem="BOQ-aH-lKN" firstAttribute="leading" secondItem="8h3-BK-DeC" secondAttribute="leading" constant="20" id="WhM-ph-khA"/>
+                            <constraint firstItem="WHL-m6-Usx" firstAttribute="top" secondItem="8h3-BK-DeC" secondAttribute="top" constant="22" id="WkY-22-KLp"/>
+                            <constraint firstItem="8ER-9J-Tkr" firstAttribute="leading" secondItem="8h3-BK-DeC" secondAttribute="leading" constant="20" id="ape-UK-tGh"/>
+                            <constraint firstItem="BOQ-aH-lKN" firstAttribute="top" secondItem="WHL-m6-Usx" secondAttribute="bottom" constant="8" symbolic="YES" id="nAc-6l-LAI"/>
+                            <constraint firstItem="WHL-m6-Usx" firstAttribute="leading" secondItem="8h3-BK-DeC" secondAttribute="leading" constant="20" id="oMp-r8-Wyi"/>
+                            <constraint firstItem="8h3-BK-DeC" firstAttribute="trailing" secondItem="K9y-8r-7we" secondAttribute="trailing" constant="20" id="phS-90-liI"/>
+                            <constraint firstItem="K9y-8r-7we" firstAttribute="leading" secondItem="8h3-BK-DeC" secondAttribute="leading" constant="20" id="rwU-kQ-ghg"/>
+                            <constraint firstItem="8ER-9J-Tkr" firstAttribute="top" secondItem="K9y-8r-7we" secondAttribute="bottom" constant="7.5" id="ua1-pW-Dh0"/>
+                            <constraint firstItem="8h3-BK-DeC" firstAttribute="trailing" secondItem="BOQ-aH-lKN" secondAttribute="trailing" constant="20" id="zNd-UT-1VK"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Women Emprowerment" id="Her-tN-J77"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zzI-mV-Qnf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="718.84057971014499" y="1021.875"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="P39-tW-yqi">
+            <objects>
+                <viewController id="bFq-SQ-hst" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lnF-47-GFz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qI8-ni-alv">
+                                <rect key="frame" x="20" y="63" width="374" height="67"/>
+                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="67" id="g2Z-77-AVE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                <state key="normal" title="About us">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t2T-Ob-WDY">
+                                <rect key="frame" x="20" y="138" width="374" height="67"/>
+                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="67" id="2Wz-mX-JpS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                <state key="normal" title="Admission">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Ky-B3-AD2">
+                                <rect key="frame" x="20" y="213" width="374" height="67"/>
+                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="67" id="Mry-9y-3ud"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                <state key="normal" title="Students">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y7z-1s-iKK">
+                                <rect key="frame" x="20" y="288" width="374" height="67"/>
+                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="67" id="xYH-oG-1uf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                <state key="normal" title="Faculties">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Zlg-4E-M7L"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Zlg-4E-M7L" firstAttribute="trailing" secondItem="Y7z-1s-iKK" secondAttribute="trailing" constant="20" id="1y0-TD-FFD"/>
+                            <constraint firstItem="Zlg-4E-M7L" firstAttribute="trailing" secondItem="qI8-ni-alv" secondAttribute="trailing" constant="20" id="690-g5-9cQ"/>
+                            <constraint firstItem="qI8-ni-alv" firstAttribute="leading" secondItem="Zlg-4E-M7L" secondAttribute="leading" constant="20" id="9R8-ab-pdw"/>
+                            <constraint firstItem="Y7z-1s-iKK" firstAttribute="top" secondItem="7Ky-B3-AD2" secondAttribute="bottom" constant="8" symbolic="YES" id="BNp-yg-oEZ"/>
+                            <constraint firstItem="Zlg-4E-M7L" firstAttribute="trailing" secondItem="t2T-Ob-WDY" secondAttribute="trailing" constant="20" id="E9d-68-aJH"/>
+                            <constraint firstItem="Y7z-1s-iKK" firstAttribute="leading" secondItem="Zlg-4E-M7L" secondAttribute="leading" constant="20" id="EQ3-Rq-aq8"/>
+                            <constraint firstItem="7Ky-B3-AD2" firstAttribute="top" secondItem="t2T-Ob-WDY" secondAttribute="bottom" constant="8" symbolic="YES" id="Ir1-0n-MFR"/>
+                            <constraint firstItem="qI8-ni-alv" firstAttribute="top" secondItem="Zlg-4E-M7L" secondAttribute="top" constant="19" id="OLo-3J-7yd"/>
+                            <constraint firstItem="Zlg-4E-M7L" firstAttribute="trailing" secondItem="7Ky-B3-AD2" secondAttribute="trailing" constant="20" id="Z5v-nF-fUo"/>
+                            <constraint firstItem="t2T-Ob-WDY" firstAttribute="leading" secondItem="Zlg-4E-M7L" secondAttribute="leading" constant="20" id="iSW-eT-InX"/>
+                            <constraint firstItem="t2T-Ob-WDY" firstAttribute="top" secondItem="qI8-ni-alv" secondAttribute="bottom" constant="8" symbolic="YES" id="jEy-Cd-Ynr"/>
+                            <constraint firstItem="7Ky-B3-AD2" firstAttribute="leading" secondItem="Zlg-4E-M7L" secondAttribute="leading" constant="20" id="zPb-QN-z3O"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="wpo-gk-LoZ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UK7-4T-j7m" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6667" y="78"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="DJI_0615" width="1479" height="830"/>
+        <image name="IMG_2214" width="1280" height="1920"/>
+        <image name="IMG_5410" width="5472" height="3648"/>
+        <image name="Women-Empowerment_header" width="1164" height="260"/>
+        <image name="fond" width="1735" height="500"/>
+        <image name="logoWh20_3" width="800" height="392"/>
+        <image name="menu_icon" width="256" height="256"/>
+        <image name="olimp2021en" width="2500" height="1688"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
