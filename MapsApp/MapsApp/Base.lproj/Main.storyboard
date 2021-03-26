@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fqZ-9j-PcQ">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MapsApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="kPF-oV-aRg">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="siF-DX-gog"/>
+                                    <outletCollection property="gestureRecognizers" destination="m8h-ih-Uqd" appends="YES" id="cX8-QX-mcX"/>
+                                    <outletCollection property="gestureRecognizers" destination="bx1-D4-7Bc" appends="YES" id="Ibv-x8-N3d"/>
+                                </connections>
+                            </mapView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="O6V-ZA-UWi">
+                                <rect key="frame" x="98" y="831" width="218" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="Standart"/>
+                                    <segment title="Satellite"/>
+                                    <segment title="Hybrid"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segmentedControlChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="97q-gv-w8Z"/>
+                                </connections>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e07-dd-Hzj">
+                                <rect key="frame" x="20" y="826" width="30" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="←">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="previousButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jBa-ca-ne1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sXE-pT-Fer">
+                                <rect key="frame" x="364" y="826" width="30" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="→">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Drj-Kg-wtP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="kPF-oV-aRg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Jp7-ew-Wn0"/>
+                            <constraint firstItem="kPF-oV-aRg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Y0h-gd-5lc"/>
+                            <constraint firstItem="kPF-oV-aRg" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="e1z-oE-OS2"/>
+                            <constraint firstAttribute="bottom" secondItem="kPF-oV-aRg" secondAttribute="bottom" id="p6L-36-bHc"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ZYu-V0-Jkq">
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="organize" id="y29-b9-YR7">
+                            <connections>
+                                <action selector="folderPressed:" destination="BYZ-38-t0r" id="yul-ch-IDG"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="mapView" destination="kPF-oV-aRg" id="TxE-Ok-rgX"/>
+                        <outlet property="navigationBar" destination="ZYu-V0-Jkq" id="6dT-Fc-9EI"/>
+                        <outlet property="nextButton" destination="sXE-pT-Fer" id="nTJ-Hv-Nkv"/>
+                        <outlet property="previousButton" destination="e07-dd-Hzj" id="mWL-p9-9qc"/>
+                        <outlet property="segmentedControlPAnel" destination="O6V-ZA-UWi" id="7vF-NH-yU9"/>
+                        <segue destination="hWq-bW-AVI" kind="show" identifier="editPlaceInfo" id="PqA-da-U5X"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="m8h-ih-Uqd">
+                    <connections>
+                        <action selector="longTap:" destination="BYZ-38-t0r" id="5nt-df-g8t"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+                <tapGestureRecognizer id="bx1-D4-7Bc">
+                    <connections>
+                        <action selector="simpleTapOnMap:" destination="BYZ-38-t0r" id="JdB-01-NdC"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="986.95652173913049" y="77.678571428571431"/>
+        </scene>
+        <!--Edit-->
+        <scene sceneID="7OA-QA-DVV">
+            <objects>
+                <viewController storyboardIdentifier="EditPlaceViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="hWq-bW-AVI" customClass="EditPlaceViewController" customModule="MapsApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HoS-4L-FlR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mmM-AF-Tp7">
+                                <rect key="frame" x="50" y="240" width="314" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HuA-fn-K98">
+                                <rect key="frame" x="50" y="166" width="314" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ZAr-Un-RE9"/>
+                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                        <constraints>
+                            <constraint firstItem="mmM-AF-Tp7" firstAttribute="leading" secondItem="ZAr-Un-RE9" secondAttribute="leading" constant="50" id="2sZ-Pv-hAZ"/>
+                            <constraint firstItem="HuA-fn-K98" firstAttribute="centerX" secondItem="HoS-4L-FlR" secondAttribute="centerX" id="DPL-7X-87S"/>
+                            <constraint firstItem="HuA-fn-K98" firstAttribute="top" secondItem="ZAr-Un-RE9" secondAttribute="top" constant="78" id="YUu-D6-8EF"/>
+                            <constraint firstItem="ZAr-Un-RE9" firstAttribute="trailing" secondItem="HuA-fn-K98" secondAttribute="trailing" constant="50" id="dca-px-RaN"/>
+                            <constraint firstItem="mmM-AF-Tp7" firstAttribute="top" secondItem="HuA-fn-K98" secondAttribute="bottom" constant="40" id="fVB-sp-efZ"/>
+                            <constraint firstItem="HuA-fn-K98" firstAttribute="leading" secondItem="ZAr-Un-RE9" secondAttribute="leading" constant="50" id="gff-z7-OiV"/>
+                            <constraint firstItem="ZAr-Un-RE9" firstAttribute="trailing" secondItem="mmM-AF-Tp7" secondAttribute="trailing" constant="50" id="oRK-Hy-Kd4"/>
+                            <constraint firstItem="mmM-AF-Tp7" firstAttribute="centerX" secondItem="HoS-4L-FlR" secondAttribute="centerX" id="yOr-Aa-z5U"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Edit" id="1To-nv-h9u">
+                        <barButtonItem key="leftBarButtonItem" style="plain" systemItem="cancel" id="8xv-JV-vre">
+                            <connections>
+                                <action selector="cancelPressed:" destination="hWq-bW-AVI" id="MNh-qa-ppm"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="done" id="gau-6k-DSf">
+                            <connections>
+                                <action selector="donePressed:" destination="hWq-bW-AVI" id="hxz-Y6-aIU"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="placeDescription" destination="mmM-AF-Tp7" id="n2e-Bc-8QD"/>
+                        <outlet property="placeTitle" destination="HuA-fn-K98" id="LlJ-hC-RGi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gal-sq-9z2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1941" y="78"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="9xW-30-L2J">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SDY-DX-fVh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fqZ-9j-PcQ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="zDK-zU-pEr">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="rkM-8l-Hbx"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="78.348214285714278"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
