@@ -24,6 +24,7 @@ class CategoryOperationsViewController: UIViewController {
     var datesRange: DatesRange!
     var transactions = [[Transaction]]()
     var expenseAmount: Int = 0
+    var delegate: UpdatePage!
     
     var context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     
@@ -57,6 +58,7 @@ class CategoryOperationsViewController: UIViewController {
     }
     
     @IBAction func closePressed(_ sender: Any) {
+        delegate.reloadData()
         self.dismiss(animated: true, completion: nil)
     }
 }
@@ -112,16 +114,18 @@ extension CategoryOperationsViewController: UITableViewDelegate, UITableViewData
         cell?.operationTitle.text = transaction.destinationTitle
         cell?.operationImage.image = transaction.icon
         cell?.transaction = transaction.instance
-        print(transaction.amount)
         
         return cell!
     }
     
-//    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-//        if editingStyle == .delete {
-//            transactions.deleteOperation(indexPath: indexPath)
-//            reloadData()
-//        } else if editingStyle == .insert {
-//        }
-//    }
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            let operationToDelete = transactions[indexPath.section][indexPath.row]
+            let preparedOperationForDeletion = operationToDelete.preDeleteOperation()
+            context.delete(preparedOperationForDeletion)
+            try! context.save()
+            reloadData()
+        } else if editingStyle == .insert {
+        }
+    }
 }

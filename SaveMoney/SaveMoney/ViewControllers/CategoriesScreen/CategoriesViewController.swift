@@ -43,6 +43,8 @@ class CategoriesViewController: UIViewController, UITableViewDataSource, UITable
         
         timePeriodSegmentedControl.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.black], for: UIControl.State.selected)
         timePeriodSegmentedControl.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.white], for: UIControl.State.normal)
+        
+        categoriesTableView.rowHeight = 55
     }
     
     func reloadData() {
@@ -116,12 +118,13 @@ class CategoriesViewController: UIViewController, UITableViewDataSource, UITable
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CategoryCell") as? CategoryTableViewCell
         let currentCategory = categoriesViewModel.requestedCategories[indexPath.row]
-
+        
         cell?.title.text = currentCategory.name
         cell?.amount.text = categoriesViewModel.expenciesRates[indexPath.row].formattedWithSeparator
         if currentCategory.iconPath != nil {
             cell?.imageType.image = UIImage.init(named: currentCategory.iconPath!)
         }
+        cell?.editButton.tag = indexPath.row
         cell?.tag = indexPath.row
         
         return cell!
@@ -137,6 +140,12 @@ class CategoriesViewController: UIViewController, UITableViewDataSource, UITable
             if let destination = segue.destination as? CategoryOperationsViewController {
                 destination.category = categoriesViewModel.requestedCategories[categoriesTableView.indexPathForSelectedRow!.row]
                 destination.datesRange = categoriesViewModel.datesRange
+                destination.delegate = self
+            }
+        case "editCategory":
+            if let destination = segue.destination as? EditCategoryViewController {
+                destination.currentCategory = categoriesViewModel.requestedCategories[(sender as! UIButton).tag]
+                destination.delegate = self
             }
         case .none:
             return

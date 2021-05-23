@@ -13,7 +13,8 @@ class EditCategoryViewController: UIViewController {
     @IBOutlet weak var categoryTitleField: UITextField!
     @IBOutlet weak var breadIcon: UIButton!
     @IBOutlet weak var cancelButton: UIButton!
-    @IBOutlet weak var addButton: UIButton!
+    @IBOutlet weak var saveButton: UIButton!
+    @IBOutlet weak var deleteButton: UIButton!
     @IBOutlet weak var bottomView: UIView!
     
     var context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
@@ -27,7 +28,6 @@ class EditCategoryViewController: UIViewController {
     }
     
     func setupViewElements() {
-        choosenIcon = breadIcon
         bottomView.layer.cornerRadius = 30
         categoryTitleField.layer.borderColor = UIColor.lightGray.cgColor
         categoryTitleField.layer.borderWidth = 1
@@ -36,8 +36,8 @@ class EditCategoryViewController: UIViewController {
         categoryTitleField.text = currentCategory.name
         
         cancelButton.layer.cornerRadius = 20
-        addButton.layer.cornerRadius = 20
-        categoryIconPressed(choosenIcon)
+        saveButton.layer.cornerRadius = 20
+        deleteButton.layer.cornerRadius = 20
     }
 
     @IBAction func categoryIconPressed(_ sender: UIButton) {
@@ -51,18 +51,25 @@ class EditCategoryViewController: UIViewController {
         self.dismiss(animated: true, completion: nil)
     }
     
-    @IBAction func addPressed(_ sender: UIButton) {
+    @IBAction func savePressed(_ sender: UIButton) {
         
         if categoryTitleField.text?.stringByRemovingWhitespaces != "" {
-            let newCategory = Category(context: context)
-            newCategory.name = categoryTitleField.text
-            newCategory.iconPath = choosenIcon.accessibilityLabel
-            
+            currentCategory.name = categoryTitleField.text
+            if choosenIcon != nil {
+                currentCategory.iconPath = choosenIcon.accessibilityLabel
+            }
             try! context.save()
             delegate.reloadData()
             self.dismiss(animated: true, completion: nil)
         } else {
             categoryTitleField.text? = ""
         }
+    }
+    
+    @IBAction func deletePressed(_ sender: UIButton) {
+        context.delete(currentCategory)
+        try! context.save()
+        delegate.reloadData()
+        self.dismiss(animated: true, completion: nil)
     }
 }

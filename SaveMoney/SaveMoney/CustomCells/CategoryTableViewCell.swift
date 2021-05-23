@@ -12,6 +12,7 @@ class CategoryTableViewCell: UITableViewCell {
     @IBOutlet weak var imageType: UIImageView!
     @IBOutlet weak var title: UILabel!
     @IBOutlet weak var amount: UILabel!
+    @IBOutlet weak var editButton: UIButton!
     
     override func awakeFromNib() {
         super.awakeFromNib()
