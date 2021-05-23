@@ -14,11 +14,11 @@
 		3C1BFCCF2626E94B006CDB7B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C1BFCCD2626E94B006CDB7B /* LaunchScreen.storyboard */; };
 		3C1BFCD92626E9CC006CDB7B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1BFCD82626E9CC006CDB7B /* LoginViewController.swift */; };
 		3C1BFCDC2626E9DF006CDB7B /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1BFCDB2626E9DF006CDB7B /* RegisterViewController.swift */; };
-		3C1BFCDF2626F614006CDB7B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3C1BFCDE2626F614006CDB7B /* GoogleService-Info.plist */; };
 		3C1BFCFF2627032A006CDB7B /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1BFCFE2627032A006CDB7B /* AccountViewController.swift */; };
 		3C1BFD0226270358006CDB7B /* TweetsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1BFD0126270358006CDB7B /* TweetsViewController.swift */; };
 		3C1BFD0526270500006CDB7B /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1BFD0426270500006CDB7B /* TabBarController.swift */; };
 		3C1BFD08262713DC006CDB7B /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1BFD07262713DC006CDB7B /* Models.swift */; };
+		3C7BAB73262D534B0040C9DC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3C7BAB72262D534B0040C9DC /* GoogleService-Info.plist */; };
 		3C9D439F26280D84007FE72F /* PersonalTweetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9D439E26280D84007FE72F /* PersonalTweetTableViewCell.swift */; };
 		3C9D43A2262855C3007FE72F /* EditAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9D43A1262855C3007FE72F /* EditAccountViewController.swift */; };
 		3C9D43A52628661D007FE72F /* EditTweetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9D43A42628661C007FE72F /* EditTweetViewController.swift */; };
@@ -38,11 +38,11 @@
 		3C1BFCD02626E94B006CDB7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3C1BFCD82626E9CC006CDB7B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		3C1BFCDB2626E9DF006CDB7B /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
-		3C1BFCDE2626F614006CDB7B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3C1BFCFE2627032A006CDB7B /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		3C1BFD0126270358006CDB7B /* TweetsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetsViewController.swift; sourceTree = "<group>"; };
 		3C1BFD0426270500006CDB7B /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		3C1BFD07262713DC006CDB7B /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		3C7BAB72262D534B0040C9DC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3C9D439E26280D84007FE72F /* PersonalTweetTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalTweetTableViewCell.swift; sourceTree = "<group>"; };
 		3C9D43A1262855C3007FE72F /* EditAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditAccountViewController.swift; sourceTree = "<group>"; };
 		3C9D43A42628661C007FE72F /* EditTweetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTweetViewController.swift; sourceTree = "<group>"; };
@@ -85,6 +85,7 @@
 		3C1BFCC12626E948006CDB7B /* Twitter */ = {
 			isa = PBXGroup;
 			children = (
+				3C7BAB72262D534B0040C9DC /* GoogleService-Info.plist */,
 				3C1BFCC22626E948006CDB7B /* AppDelegate.swift */,
 				3C1BFCC42626E948006CDB7B /* SceneDelegate.swift */,
 				3C1BFCC82626E948006CDB7B /* Main.storyboard */,
@@ -93,7 +94,6 @@
 				3C1BFCD02626E94B006CDB7B /* Info.plist */,
 				3C1BFCD82626E9CC006CDB7B /* LoginViewController.swift */,
 				3C1BFCDB2626E9DF006CDB7B /* RegisterViewController.swift */,
-				3C1BFCDE2626F614006CDB7B /* GoogleService-Info.plist */,
 				3C1BFCFE2627032A006CDB7B /* AccountViewController.swift */,
 				3C1BFD0126270358006CDB7B /* TweetsViewController.swift */,
 				3C1BFD0426270500006CDB7B /* TabBarController.swift */,
@@ -184,7 +184,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C1BFCCF2626E94B006CDB7B /* LaunchScreen.storyboard in Resources */,
-				3C1BFCDF2626F614006CDB7B /* GoogleService-Info.plist in Resources */,
+				3C7BAB73262D534B0040C9DC /* GoogleService-Info.plist in Resources */,
 				3C1BFCCC2626E94B006CDB7B /* Assets.xcassets in Resources */,
 				3C1BFCCA2626E948006CDB7B /* Main.storyboard in Resources */,
 			);
