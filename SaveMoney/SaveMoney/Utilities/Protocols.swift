@@ -19,3 +19,6 @@ protocol OperationDetailsSave {
     func saveDetails(date: Date, comment: String)
 }
 
+protocol DateRangeSave {
+    func saveDateRange(datesRange: DatesRange)
+}

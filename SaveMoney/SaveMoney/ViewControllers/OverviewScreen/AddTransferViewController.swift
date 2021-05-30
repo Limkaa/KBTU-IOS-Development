@@ -65,7 +65,7 @@ class AddTransferViewController: UIViewController {
             fromAccountDropDownMenu.font = UIFont(name: "Helvetica", size: 20)
             fromAccountDropDownMenu.addTransparentView()
         } else {
-            let alert = UIAlertController(title: "Warning", message: "There are no any options to choose. You need to add new account!", preferredStyle: .alert)
+            let alert = UIAlertController(title: "Warning".localized(), message: "There are no any options to choose. You need to add new account!".localized(), preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
             self.present(alert, animated: true)
         }
@@ -84,7 +84,7 @@ class AddTransferViewController: UIViewController {
             toAccountDropDownMenu.font = UIFont(name: "Helvetica", size: 20)
             toAccountDropDownMenu.addTransparentView()
         } else {
-            let alert = UIAlertController(title: "Warning", message: "There are no any options to choose. You need to add new account!", preferredStyle: .alert)
+            let alert = UIAlertController(title: "Warning".localized(), message: "There are no any options to choose. You need to add new account!".localized(), preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
             self.present(alert, animated: true)
         }
@@ -126,7 +126,7 @@ class AddTransferViewController: UIViewController {
     
     @IBAction func addPressed(_ sender: UIButton) {
         if fromAccountDropDownMenu.choosenObject == nil || toAccountDropDownMenu.choosenObject == nil || amountLabel.text!.stringByRemovingWhitespaces == "0" || (fromAccountDropDownMenu.choosenObject == toAccountDropDownMenu.choosenObject) {
-            let alert = UIAlertController(title: "Warning", message: "Please check, that entered amount is greater than 0, accounts for transfer operation are chosen and they are not same!", preferredStyle: .alert)
+            let alert = UIAlertController(title: "Warning".localized(), message: "Please check, that entered amount is greater than 0, accounts for transfer operation are chosen and they are not same!".localized(), preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
             self.present(alert, animated: true)
         }

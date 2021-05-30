@@ -1,0 +1,15 @@
+"Balance" = "Equilibrio";
+"All time" = "Durante todo este tiempo";
+"Comment" = "La nota";
+"From: incomes" = "Donde: ingresos";
+"Account deleted" = "Cuenta borrada";
+"Category deleted" = "Categoría eliminada";
+"From" = "De donde";
+"Warning" = "Una advertencia!";
+"Please check, that entered amount is greater than 0 and account for income operation is chosen!" = "Asegúrese de que el monto ingresado sea mayor que 0 y que la cuenta para la transacción de ingresos esté seleccionada!";
+"There are no any options to choose. You need to add new account!" = "No hay opciones disponibles para elegir. Necesitas agregar una nueva cuenta!";
+"There are no any options to choose. You need to add new category!" = "No hay opciones disponibles para elegir. Necesitas agregar una nueva categoría!";
+"Please check, that entered amount is greater than 0, account and category for expense operation are chosen!" = "Asegúrese de que el monto ingresado sea mayor que 0 y que la factura y la categoría para la transacción de gastos estén seleccionadas!";
+"Please check, that entered amount is greater than 0, accounts for transfer operation are chosen and they are not same!" = "Asegúrese de que el monto ingresado sea mayor que 0 y que las cuentas para la operación de transferencia estén seleccionadas!";
+"Successfully sent!" = "Enviado!";
+"Your message was successfully sent!" = "Su mensaje ha sido enviado con éxito al soporte técnico!";

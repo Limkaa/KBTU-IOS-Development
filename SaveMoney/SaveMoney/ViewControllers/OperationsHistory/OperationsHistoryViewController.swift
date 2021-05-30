@@ -84,25 +84,6 @@ class OperationsHistoryViewController: UIViewController {
         reloadData()
     }
     
-    @IBAction func timePeriodPressed(_ sender: Any) {
-        let cal = Calendar(identifier: .gregorian)
-        
-        var componentsFrom = DateComponents()
-        componentsFrom.year = 2021
-        componentsFrom.month = 1
-        componentsFrom.day = 1
-
-        let from = cal.date(from: componentsFrom) ?? Date()
-        
-        let dateRangePickerViewController = CalendarDateRangePickerViewController(collectionViewLayout: UICollectionViewFlowLayout())
-        dateRangePickerViewController.delegate = self
-        dateRangePickerViewController.minimumDate = from
-        dateRangePickerViewController.maximumDate = Date()
-    
-        let navigationController = UINavigationController(rootViewController: dateRangePickerViewController)
-        self.present(navigationController, animated: true, completion: nil)
-    }
-    
     @IBAction func previousTimePeriodPressed(_ sender: Any) {
         operationsViewModel.datesRange.getAnotherPeriodByStep(step: -1)
         reloadData()
@@ -112,22 +93,20 @@ class OperationsHistoryViewController: UIViewController {
         operationsViewModel.datesRange.getAnotherPeriodByStep(step: 1)
         reloadData()
     }
-}
-
-extension OperationsHistoryViewController: CalendarDateRangePickerViewControllerDelegate {
     
-    func didCancelPickingDateRange() {
-        self.dismiss(animated: true, completion: nil)
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        switch segue.identifier {
+        case "chooseDatesRange":
+            if let destination = segue.destination as? DatesRangePickerViewController {
+                destination.delegate = self
+                destination.datesRange = operationsViewModel.datesRange
+            }
+        case .none:
+            return
+        case .some(_):
+            return
+        }
     }
-    
-    func didPickDateRange(startDate: Date!, endDate: Date!) {
-        operationsViewModel.datesRange.from = startDate.startOfDay
-        operationsViewModel.datesRange.till = endDate.endOfDay
-        reloadData()
-        self.dismiss(animated: true, completion: nil)
-        
-    }
-    
 }
 
 
@@ -192,5 +171,12 @@ extension OperationsHistoryViewController: UITableViewDelegate, UITableViewDataS
             reloadData()
         } else if editingStyle == .insert {
         }
+    }
+}
+
+extension OperationsHistoryViewController: DateRangeSave {
+    func saveDateRange(datesRange: DatesRange) {
+        operationsViewModel.datesRange = datesRange
+        reloadData()
     }
 }

@@ -36,20 +36,20 @@ struct TransactionViewModel {
     init(transaction: Transaction) {
         self.instance = transaction
         self.amount = transaction.amount
-        self.comment = "Comment: \(transaction.comment ?? "--")"
+        self.comment = "Comment".localized() + ": " + (transaction.comment ?? "--")
         self.date = transaction.date!
         self.transactionType = TransactionType(rawValue: Int(transaction.type))!
         
         switch transaction.type {
         case 1:
-            self.sourceTitle = "From: incomes"
-            self.destinationTitle = "\(transaction.toAccount?.title! ?? "unknown")"
+            self.sourceTitle = "From: incomes".localized()
+            self.destinationTitle = "\(transaction.toAccount?.title! ?? "Deleted".localized())"
             self.typeColor = UIColor.systemGreen
             self.typeSign = "+"
             
         case 2:
-            self.sourceTitle = "From: \(transaction.fromAccount?.title! ?? "unknown")"
-            self.destinationTitle = "\(transaction.toCategory?.name! ?? "unknown")"
+            self.sourceTitle = "From".localized() + ": " + (transaction.fromAccount?.title! ?? "Account deleted".localized())
+            self.destinationTitle = "\(transaction.toCategory?.name! ?? "Category deleted".localized())"
             if transaction.toCategory != nil {
                 self.icon = UIImage.init(named: (transaction.toCategory?.iconPath)!)
             }
@@ -57,8 +57,8 @@ struct TransactionViewModel {
             self.typeSign = "-"
             
         case 3:
-            self.sourceTitle = "From: \(transaction.fromAccount?.title! ?? "unknown")"
-            self.destinationTitle = "\(transaction.toAccount?.title! ?? "unknown")"
+            self.sourceTitle = "From".localized() + ": " + (transaction.fromAccount?.title! ?? "Account deleted".localized())
+            self.destinationTitle = "\(transaction.toAccount?.title! ?? "Account deleted".localized())"
             self.typeColor = UIColor.lightGray
         case 0:
             break

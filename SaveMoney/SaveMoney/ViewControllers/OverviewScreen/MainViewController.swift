@@ -36,7 +36,7 @@ class MainViewController: UIViewController, UpdatePage {
     var context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     var accounts: [Account] = []
     var datesRange = DatesRange(type: .month)
-    var currenciesAPI = ExchangeRatesAPI()
+//    var currenciesAPI = ExchangeRatesAPI()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -78,7 +78,7 @@ class MainViewController: UIViewController, UpdatePage {
             } catch {
                 
             }
-        }
+        }.resume()
     }
     
     
@@ -143,7 +143,7 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
 
         cell?.bottomView.layer.cornerRadius = 15
         cell?.title.text = currentAccount.title
-        cell?.balance.text = "Balance: \(currentAccount.amount.formattedWithSeparator)"
+        cell?.balance.text = "Balance".localized() + ": " + currentAccount.amount.formattedWithSeparator
         cell?.imageType.image = UIImage.init(named: currentAccount.type!)
         cell?.tag = indexPath.row
         

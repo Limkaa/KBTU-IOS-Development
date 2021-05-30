@@ -86,7 +86,7 @@ class DatesRange {
     func toString() -> String {
         switch self.dateRangeType {
         case .all:
-            return "All time"
+            return "All time".localized()
         case .year:
             return "\(till.yearString)"
         case .month:

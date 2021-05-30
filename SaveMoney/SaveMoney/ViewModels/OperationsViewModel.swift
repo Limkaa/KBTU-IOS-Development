@@ -18,7 +18,7 @@ class OperationsViewModel {
     
     func getTransactions() {
         let request = Transaction.getTransactions(from: datesRange.from, till: datesRange.till)
-        requestedTransactions = Transaction.groupRequestedTransactions(transactions: try! context.fetch(request))
+        requestedTransactions = Transaction.groupRequestedTransactions(transactions: try! context.fetch(request), by: .day)
         getMoneyRates(request: request)
     }
     

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class CategoriesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UpdatePage {
+class CategoriesViewController: UIViewController, UpdatePage {
     
     // ViewController elements (just design)
     @IBOutlet weak var categoriesHeaderView: UIView!
@@ -37,14 +37,12 @@ class CategoriesViewController: UIViewController, UITableViewDataSource, UITable
     func setupViewElements() {
         categoriesHeaderView.layer.cornerRadius = 30
         categoriesListView.layer.cornerRadius = 30
+        categoriesTableView.rowHeight = 55
         
         timePeriodButton.layer.cornerRadius = 20
         timePeriodTypeChanged(self)
-        
         timePeriodSegmentedControl.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.black], for: UIControl.State.selected)
         timePeriodSegmentedControl.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.white], for: UIControl.State.normal)
-        
-        categoriesTableView.rowHeight = 55
     }
     
     func reloadData() {
@@ -78,25 +76,6 @@ class CategoriesViewController: UIViewController, UITableViewDataSource, UITable
         reloadData()
     }
     
-    @IBAction func timePeriodPressed(_ sender: Any) {
-        let cal = Calendar(identifier: .gregorian)
-        
-        var componentsFrom = DateComponents()
-        componentsFrom.year = 2021
-        componentsFrom.month = 1
-        componentsFrom.day = 1
-
-        let from = cal.date(from: componentsFrom) ?? Date()
-        
-        let dateRangePickerViewController = CalendarDateRangePickerViewController(collectionViewLayout: UICollectionViewFlowLayout())
-        dateRangePickerViewController.delegate = self
-        dateRangePickerViewController.minimumDate = from
-        dateRangePickerViewController.maximumDate = Date()
-    
-        let navigationController = UINavigationController(rootViewController: dateRangePickerViewController)
-        self.present(navigationController, animated: true, completion: nil)
-    }
-    
     @IBAction func previousTimePeriodPressed(_ sender: Any) {
         categoriesViewModel.datesRange.getAnotherPeriodByStep(step: -1)
         reloadData()
@@ -107,6 +86,38 @@ class CategoriesViewController: UIViewController, UITableViewDataSource, UITable
         reloadData()
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        switch segue.identifier {
+        case "addCategory":
+            if let destination = segue.destination as? AddCategoryViewController {
+                destination.delegate = self
+            }
+        case "categoryOperations":
+            if let destination = segue.destination as? CategoryOperationsViewController {
+                destination.category = categoriesViewModel.requestedCategories[categoriesTableView.indexPathForSelectedRow!.row]
+                destination.datesRange = categoriesViewModel.datesRange
+                destination.delegate = self
+            }
+        case "editCategory":
+            if let destination = segue.destination as? EditCategoryViewController {
+                destination.currentCategory = categoriesViewModel.requestedCategories[(sender as! UIButton).tag]
+                destination.delegate = self
+            }
+        case "chooseDatesRange":
+            if let destination = segue.destination as? DatesRangePickerViewController {
+                destination.delegate = self
+                destination.datesRange = categoriesViewModel.datesRange
+            }
+        case .none:
+            return
+        case .some(_):
+            return
+        }
+    }
+}
+
+
+extension CategoriesViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return categoriesViewModel.requestedCategories.count
     }
@@ -129,44 +140,12 @@ class CategoriesViewController: UIViewController, UITableViewDataSource, UITable
         
         return cell!
     }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        switch segue.identifier {
-        case "addCategory":
-            if let destination = segue.destination as? AddCategoryViewController {
-                destination.delegate = self
-            }
-        case "categoryOperations":
-            if let destination = segue.destination as? CategoryOperationsViewController {
-                destination.category = categoriesViewModel.requestedCategories[categoriesTableView.indexPathForSelectedRow!.row]
-                destination.datesRange = categoriesViewModel.datesRange
-                destination.delegate = self
-            }
-        case "editCategory":
-            if let destination = segue.destination as? EditCategoryViewController {
-                destination.currentCategory = categoriesViewModel.requestedCategories[(sender as! UIButton).tag]
-                destination.delegate = self
-            }
-        case .none:
-            return
-        case .some(_):
-            return
-        }
-    }
-    
 }
 
-extension CategoriesViewController: CalendarDateRangePickerViewControllerDelegate {
-    
-    func didCancelPickingDateRange() {
-        self.dismiss(animated: true, completion: nil)
-    }
-    
-    func didPickDateRange(startDate: Date!, endDate: Date!) {
-        categoriesViewModel.datesRange.from = startDate.startOfDay
-        categoriesViewModel.datesRange.till = endDate.endOfDay
+
+extension CategoriesViewController: DateRangeSave {
+    func saveDateRange(datesRange: DatesRange) {
+        categoriesViewModel.datesRange = datesRange
         reloadData()
-        self.dismiss(animated: true, completion: nil)
     }
-    
 }

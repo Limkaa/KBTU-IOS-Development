@@ -15,6 +15,6 @@ struct Rates {
     var till: Date?
     
     var cashFlow: Money {
-        return Money(amount: income.amountUnsigned - expense.amountUnsigned)
+        return Money(amount: income.amount - expense.amount)
     }
 }

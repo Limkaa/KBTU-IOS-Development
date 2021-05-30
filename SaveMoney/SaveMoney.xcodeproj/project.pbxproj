@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C2442DC2660E35D0068BDB6 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2442DB2660E35D0068BDB6 /* SettingsViewController.swift */; };
+		3C2443072660F57C0068BDB6 /* StatisticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2443062660F57C0068BDB6 /* StatisticsViewController.swift */; };
+		3C244339266128790068BDB6 /* StatisticsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C244338266128790068BDB6 /* StatisticsTableViewCell.swift */; };
+		3C24433F26625EE90068BDB6 /* DatesRangePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C24433E26625EE90068BDB6 /* DatesRangePickerViewController.swift */; };
+		3C24434626626DE70068BDB6 /* ExchangeRatesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C24434526626DE70068BDB6 /* ExchangeRatesAPI.swift */; };
+		3C24434D266274EF0068BDB6 /* Localization.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3C24434F266274EF0068BDB6 /* Localization.strings */; };
 		3CEF813F2641699500988E53 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7DFD7726308E03002A5AEE /* Extensions.swift */; };
 		3CEF81402641699500988E53 /* AccountTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7DFD6B263034BE002A5AEE /* AccountTableViewCell.swift */; };
 		3CEF81412641699500988E53 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7DFD6726301CCD002A5AEE /* MainViewController.swift */; };
@@ -24,9 +30,6 @@
 		3CFFE1562647FF5100A6E5D2 /* EditCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFFE1552647FF5100A6E5D2 /* EditCategoryViewController.swift */; };
 		3CFFE1592648028700A6E5D2 /* CategoryOperationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFFE1582648028700A6E5D2 /* CategoryOperationsViewController.swift */; };
 		3CFFE15D26480F8D00A6E5D2 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFFE15C26480F8D00A6E5D2 /* Protocols.swift */; };
-		3CFFE17926490EF400A6E5D2 /* CalendarDateRangePickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFFE17826490EF400A6E5D2 /* CalendarDateRangePickerCell.swift */; };
-		3CFFE17C26490F1200A6E5D2 /* CalendarDateRangePickerHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFFE17B26490F1200A6E5D2 /* CalendarDateRangePickerHeaderView.swift */; };
-		3CFFE17F26490F2A00A6E5D2 /* CalendarDateRangePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFFE17E26490F2A00A6E5D2 /* CalendarDateRangePickerViewController.swift */; };
 		3CFFE1852649222300A6E5D2 /* AddIncomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFFE1842649222300A6E5D2 /* AddIncomeViewController.swift */; };
 		3CFFE18A26493F9700A6E5D2 /* DropDownTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFFE18926493F9700A6E5D2 /* DropDownTableViewCell.swift */; };
 		3CFFE18D26493FC000A6E5D2 /* DropDownTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFFE18C26493FC000A6E5D2 /* DropDownTableView.swift */; };
@@ -44,13 +47,24 @@
 		3CFFE225264CEECC00A6E5D2 /* Transaction+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFFE21F264CEECC00A6E5D2 /* Transaction+CoreDataClass.swift */; };
 		3CFFE22D264D46B500A6E5D2 /* Money.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFFE22C264D46B500A6E5D2 /* Money.swift */; };
 		3CFFE231264D46E800A6E5D2 /* Rates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFFE230264D46E800A6E5D2 /* Rates.swift */; };
-		3CFFE236264D5B8600A6E5D2 /* ExchangeRatesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFFE235264D5B8500A6E5D2 /* ExchangeRatesAPI.swift */; };
 		3CFFE249264E6ED800A6E5D2 /* CategoriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFFE248264E6ED800A6E5D2 /* CategoriesViewModel.swift */; };
 		6EDE8925C8D025C914BCEFC3 /* Pods_SaveMoney.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 942AFB6B31AD20CC70EB99E5 /* Pods_SaveMoney.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		036D2E77292C9FC8DF22C5E9 /* Pods-SaveMoney.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SaveMoney.release.xcconfig"; path = "Target Support Files/Pods-SaveMoney/Pods-SaveMoney.release.xcconfig"; sourceTree = "<group>"; };
+		3C2442DB2660E35D0068BDB6 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		3C2443062660F57C0068BDB6 /* StatisticsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsViewController.swift; sourceTree = "<group>"; };
+		3C244338266128790068BDB6 /* StatisticsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsTableViewCell.swift; sourceTree = "<group>"; };
+		3C24433E26625EE90068BDB6 /* DatesRangePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatesRangePickerViewController.swift; sourceTree = "<group>"; };
+		3C24434326626C5D0068BDB6 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
+		3C24434526626DE70068BDB6 /* ExchangeRatesAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRatesAPI.swift; sourceTree = "<group>"; };
+		3C24434E266274EF0068BDB6 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localization.strings; sourceTree = "<group>"; };
+		3C244351266274F60068BDB6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localization.strings; sourceTree = "<group>"; };
+		3C24435326627D0A0068BDB6 /* kk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = kk; path = kk.lproj/Main.strings; sourceTree = "<group>"; };
+		3C24435426627D0A0068BDB6 /* kk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = kk; path = kk.lproj/Localization.strings; sourceTree = "<group>"; };
+		3C244358266287AD0068BDB6 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
+		3C244359266287AD0068BDB6 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localization.strings; sourceTree = "<group>"; };
 		3C7DFD4626301AF4002A5AEE /* SaveMoney.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SaveMoney.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C7DFD4926301AF4002A5AEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3C7DFD4B26301AF4002A5AEE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -70,9 +84,6 @@
 		3CFFE1552647FF5100A6E5D2 /* EditCategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditCategoryViewController.swift; sourceTree = "<group>"; };
 		3CFFE1582648028700A6E5D2 /* CategoryOperationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryOperationsViewController.swift; sourceTree = "<group>"; };
 		3CFFE15C26480F8D00A6E5D2 /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
-		3CFFE17826490EF400A6E5D2 /* CalendarDateRangePickerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarDateRangePickerCell.swift; sourceTree = "<group>"; };
-		3CFFE17B26490F1200A6E5D2 /* CalendarDateRangePickerHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarDateRangePickerHeaderView.swift; sourceTree = "<group>"; };
-		3CFFE17E26490F2A00A6E5D2 /* CalendarDateRangePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarDateRangePickerViewController.swift; sourceTree = "<group>"; };
 		3CFFE1842649222300A6E5D2 /* AddIncomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddIncomeViewController.swift; sourceTree = "<group>"; };
 		3CFFE18926493F9700A6E5D2 /* DropDownTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownTableViewCell.swift; sourceTree = "<group>"; };
 		3CFFE18C26493FC000A6E5D2 /* DropDownTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownTableView.swift; sourceTree = "<group>"; };
@@ -90,7 +101,6 @@
 		3CFFE21F264CEECC00A6E5D2 /* Transaction+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Transaction+CoreDataClass.swift"; sourceTree = "<group>"; };
 		3CFFE22C264D46B500A6E5D2 /* Money.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Money.swift; sourceTree = "<group>"; };
 		3CFFE230264D46E800A6E5D2 /* Rates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rates.swift; sourceTree = "<group>"; };
-		3CFFE235264D5B8500A6E5D2 /* ExchangeRatesAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRatesAPI.swift; sourceTree = "<group>"; };
 		3CFFE248264E6ED800A6E5D2 /* CategoriesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesViewModel.swift; sourceTree = "<group>"; };
 		445267921AA190F2C4AB8725 /* Pods-SaveMoney.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SaveMoney.debug.xcconfig"; path = "Target Support Files/Pods-SaveMoney/Pods-SaveMoney.debug.xcconfig"; sourceTree = "<group>"; };
 		942AFB6B31AD20CC70EB99E5 /* Pods_SaveMoney.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SaveMoney.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -115,6 +125,30 @@
 				036D2E77292C9FC8DF22C5E9 /* Pods-SaveMoney.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		3C2442DA2660E3420068BDB6 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				3C2442DB2660E35D0068BDB6 /* SettingsViewController.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		3C2443052660F5670068BDB6 /* Statistics */ = {
+			isa = PBXGroup;
+			children = (
+				3C2443062660F57C0068BDB6 /* StatisticsViewController.swift */,
+			);
+			path = Statistics;
+			sourceTree = "<group>";
+		};
+		3C24433D26625EBF0068BDB6 /* Additional */ = {
+			isa = PBXGroup;
+			children = (
+				3C24433E26625EE90068BDB6 /* DatesRangePickerViewController.swift */,
+			);
+			path = Additional;
 			sourceTree = "<group>";
 		};
 		3C7DFD3D26301AF4002A5AEE = {
@@ -142,7 +176,6 @@
 				3CFFE1E2264BAFFC00A6E5D2 /* CustomClasses */,
 				3CFFE1DE264BAC1600A6E5D2 /* ViewModels */,
 				3CFFE18726492DFF00A6E5D2 /* DropDownTableView */,
-				3CFFE16F26490E9300A6E5D2 /* CalendarDateRangePicker */,
 				3CEF81E52641856C00988E53 /* Models */,
 				3C7DFD6A26303483002A5AEE /* CustomCells */,
 				3C7DFD6626301CAD002A5AEE /* ViewControllers */,
@@ -153,6 +186,7 @@
 				3C7DFD5726301AF8002A5AEE /* LaunchScreen.storyboard */,
 				3C7DFD5A26301AF8002A5AEE /* Info.plist */,
 				3CEF8173264175BF00988E53 /* SaveMoney.xcdatamodeld */,
+				3C24434F266274EF0068BDB6 /* Localization.strings */,
 			);
 			path = SaveMoney;
 			sourceTree = "<group>";
@@ -160,6 +194,9 @@
 		3C7DFD6626301CAD002A5AEE /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				3C24433D26625EBF0068BDB6 /* Additional */,
+				3C2443052660F5670068BDB6 /* Statistics */,
+				3C2442DA2660E3420068BDB6 /* Settings */,
 				3CFFE1D6264ABC3A00A6E5D2 /* OperationsHistory */,
 				3CFFE14A2647E88D00A6E5D2 /* OverviewScreen */,
 				3CFFE14C2647E8A900A6E5D2 /* CategoriesScreen */,
@@ -173,6 +210,7 @@
 				3C7DFD6B263034BE002A5AEE /* AccountTableViewCell.swift */,
 				3CFFE13F2647E18E00A6E5D2 /* CategoryTableViewCell.swift */,
 				3CFFE1DB264AC0F400A6E5D2 /* OperationTableViewCell.swift */,
+				3C244338266128790068BDB6 /* StatisticsTableViewCell.swift */,
 			);
 			path = CustomCells;
 			sourceTree = "<group>";
@@ -210,16 +248,6 @@
 				3CFFE1582648028700A6E5D2 /* CategoryOperationsViewController.swift */,
 			);
 			path = CategoriesScreen;
-			sourceTree = "<group>";
-		};
-		3CFFE16F26490E9300A6E5D2 /* CalendarDateRangePicker */ = {
-			isa = PBXGroup;
-			children = (
-				3CFFE17826490EF400A6E5D2 /* CalendarDateRangePickerCell.swift */,
-				3CFFE17B26490F1200A6E5D2 /* CalendarDateRangePickerHeaderView.swift */,
-				3CFFE17E26490F2A00A6E5D2 /* CalendarDateRangePickerViewController.swift */,
-			);
-			path = CalendarDateRangePicker;
 			sourceTree = "<group>";
 		};
 		3CFFE18726492DFF00A6E5D2 /* DropDownTableView */ = {
@@ -265,7 +293,7 @@
 			children = (
 				3CFFE15C26480F8D00A6E5D2 /* Protocols.swift */,
 				3C7DFD7726308E03002A5AEE /* Extensions.swift */,
-				3CFFE235264D5B8500A6E5D2 /* ExchangeRatesAPI.swift */,
+				3C24434526626DE70068BDB6 /* ExchangeRatesAPI.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -321,6 +349,9 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
+				kk,
+				es,
 			);
 			mainGroup = 3C7DFD3D26301AF4002A5AEE;
 			productRefGroup = 3C7DFD4726301AF4002A5AEE /* Products */;
@@ -338,6 +369,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3CEF81C326417B1300988E53 /* LaunchScreen.storyboard in Resources */,
+				3C24434D266274EF0068BDB6 /* Localization.strings in Resources */,
 				3CEF81BD26417ACC00988E53 /* Main.storyboard in Resources */,
 				3CEF81BB26417ABD00988E53 /* Assets.xcassets in Resources */,
 			);
@@ -383,15 +415,16 @@
 				3CFFE1D8264ABC5600A6E5D2 /* OperationsHistoryViewController.swift in Sources */,
 				3CFFE225264CEECC00A6E5D2 /* Transaction+CoreDataClass.swift in Sources */,
 				3CFFE13A2647DE5800A6E5D2 /* CategoriesViewController.swift in Sources */,
+				3C24434626626DE70068BDB6 /* ExchangeRatesAPI.swift in Sources */,
 				3CFFE223264CEECC00A6E5D2 /* Account+CoreDataClass.swift in Sources */,
 				3CFFE1E8264BB07C00A6E5D2 /* HeaderLabel.swift in Sources */,
 				3CEF81C026417ADB00988E53 /* SaveMoney.xcdatamodeld in Sources */,
+				3C2443072660F57C0068BDB6 /* StatisticsViewController.swift in Sources */,
 				3CEF813F2641699500988E53 /* Extensions.swift in Sources */,
 				3CFFE216264C3D2100A6E5D2 /* DatesRange.swift in Sources */,
 				3CFFE22D264D46B500A6E5D2 /* Money.swift in Sources */,
 				3CEF81402641699500988E53 /* AccountTableViewCell.swift in Sources */,
 				3CFFE14F2647E8DA00A6E5D2 /* AddCategoryViewController.swift in Sources */,
-				3CFFE17C26490F1200A6E5D2 /* CalendarDateRangePickerHeaderView.swift in Sources */,
 				3CFFE221264CEECC00A6E5D2 /* Category+CoreDataClass.swift in Sources */,
 				3CFFE196264A5FA600A6E5D2 /* AddTransferViewController.swift in Sources */,
 				3CEF81412641699500988E53 /* MainViewController.swift in Sources */,
@@ -400,27 +433,41 @@
 				3CFFE1852649222300A6E5D2 /* AddIncomeViewController.swift in Sources */,
 				3CEF81442641699500988E53 /* SceneDelegate.swift in Sources */,
 				3CFFE190264A4E9600A6E5D2 /* AddDetailsViewController.swift in Sources */,
+				3C2442DC2660E35D0068BDB6 /* SettingsViewController.swift in Sources */,
 				3CFFE1562647FF5100A6E5D2 /* EditCategoryViewController.swift in Sources */,
 				3CFFE1402647E18E00A6E5D2 /* CategoryTableViewCell.swift in Sources */,
 				3CFFE207264C06F000A6E5D2 /* TransactionViewModel.swift in Sources */,
+				3C244339266128790068BDB6 /* StatisticsTableViewCell.swift in Sources */,
 				3CFFE18D26493FC000A6E5D2 /* DropDownTableView.swift in Sources */,
-				3CFFE17F26490F2A00A6E5D2 /* CalendarDateRangePickerViewController.swift in Sources */,
-				3CFFE17926490EF400A6E5D2 /* CalendarDateRangePickerCell.swift in Sources */,
 				3CFFE193264A5F8600A6E5D2 /* AddExpenseViewController.swift in Sources */,
 				3CFFE1592648028700A6E5D2 /* CategoryOperationsViewController.swift in Sources */,
-				3CFFE236264D5B8600A6E5D2 /* ExchangeRatesAPI.swift in Sources */,
 				3CFFE249264E6ED800A6E5D2 /* CategoriesViewModel.swift in Sources */,
 				3CFFE15D26480F8D00A6E5D2 /* Protocols.swift in Sources */,
+				3C24433F26625EE90068BDB6 /* DatesRangePickerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		3C24434F266274EF0068BDB6 /* Localization.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3C24434E266274EF0068BDB6 /* ru */,
+				3C244351266274F60068BDB6 /* en */,
+				3C24435426627D0A0068BDB6 /* kk */,
+				3C244359266287AD0068BDB6 /* es */,
+			);
+			name = Localization.strings;
+			sourceTree = "<group>";
+		};
 		3C7DFD4F26301AF4002A5AEE /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				3C7DFD5026301AF4002A5AEE /* Base */,
+				3C24434326626C5D0068BDB6 /* ru */,
+				3C24435326627D0A0068BDB6 /* kk */,
+				3C244358266287AD0068BDB6 /* es */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -440,6 +487,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -501,6 +549,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

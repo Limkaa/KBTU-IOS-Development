@@ -25,6 +25,15 @@ extension String {
         let parts = components(separatedBy: " ")
         return parts.joined(separator: "")
     }
+    
+    func localized() -> String {
+        return NSLocalizedString(
+            self,
+            tableName: "Localization",
+            bundle: .main,
+            value: self,
+            comment: self)
+    }
 }
 
 extension Date {
@@ -47,10 +56,8 @@ extension Date {
     }
     
     var startOfMonth: Date {
-
         let calendar = Calendar(identifier: .gregorian)
         let components = calendar.dateComponents([.year, .month], from: self)
-    
         return  calendar.date(from: components)!
     }
 
@@ -61,6 +68,10 @@ extension Date {
         return Calendar(identifier: .gregorian).date(byAdding: components, to: startOfMonth)!
     }
     
+    var previousMonth: Date {
+        return Calendar.current.date(byAdding: .month, value: -1, to: self)!
+    }
+    
     var dayString: String {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "dd.MM.yyyy"
@@ -69,7 +80,13 @@ extension Date {
     
     var monthString: String {
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "MMMM yyyy"
+        dateFormatter.dateFormat = "MMM yyyy"
+        return dateFormatter.string(from: self)
+    }
+    
+    var monthShortString: String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "MM.yyyy"
         return dateFormatter.string(from: self)
     }
     
@@ -78,4 +95,5 @@ extension Date {
         dateFormatter.dateFormat = "yyyy"
         return dateFormatter.string(from: self)
     }
+    
 }

@@ -1,0 +1,15 @@
+"Balance" = "Баланс";
+"All time" = "Барлық кезең ішінде";
+"Comment" = "Түсініктеме";
+"From: incomes" = "Қайдан: табыс";
+"Account deleted" = "Шот жойылды";
+"Category deleted" = "Санат жойылды";
+"From" = "Қайдан";
+"Warning" = "Ескерту!";
+"Please check, that entered amount is greater than 0 and account for income operation is chosen!" = "Енгізілген соманың 0-ден үлкен екендігіне және кіріс операциясының шоты таңдалғанына көз жеткізіңіз!";
+"There are no any options to choose. You need to add new account!" = "Таңдау мүмкіндігі жоқ. Сізге жаңа шотты қосу керек!";
+"There are no any options to choose. You need to add new category!" = "Таңдау мүмкіндігі жоқ. Сізге жаңа санатты қосу керек!";
+"Please check, that entered amount is greater than 0, account and category for expense operation are chosen!" = "Енгізілген соманың 0-ден үлкен екендігіне көз жеткізіп, шығындар операциялары үшін шот мен санат таңдалады!";
+"Please check, that entered amount is greater than 0, accounts for transfer operation are chosen and they are not same!" = "Енгізілген соманың 0-ден үлкен екендігіне және аударым операциясының шоттары таңдалғанына көз жеткізіңіз!";
+"Successfully sent!" = "Жіберілді!";
+"Your message was successfully sent!" = "Сіздің хабарламаңыз техникалық қолдауға сәтті жіберілді!";

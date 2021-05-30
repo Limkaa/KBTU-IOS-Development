@@ -1,0 +1,275 @@
+/* Class = "UILabel"; text = "Income"; ObjectID = "0tj-MT-Chl"; */
+"0tj-MT-Chl.text" = "Ingreso";
+
+/* Class = "UIButton"; normalTitle = "To category"; ObjectID = "2kU-KC-Zey"; */
+"2kU-KC-Zey.normalTitle" = "Categoría";
+
+/* Class = "UILabel"; text = "New expense"; ObjectID = "2lg-kR-eGc"; */
+"2lg-kR-eGc.text" = "Nuevo gasto";
+
+/* Class = "UIButton"; normalTitle = "Save"; ObjectID = "2ux-6d-mh0"; */
+"2ux-6d-mh0.normalTitle" = "Ahorrar";
+
+/* Class = "UILabel"; text = "New operation"; ObjectID = "4kj-Wp-sLI"; */
+"4kj-Wp-sLI.text" = "Nueva operación";
+
+/* Class = "UIButton"; normalTitle = "Cancel"; ObjectID = "4xp-fi-lR3"; */
+"4xp-fi-lR3.normalTitle" = "Cancelar";
+
+/* Class = "UILabel"; text = "Income"; ObjectID = "5eE-CQ-AL6"; */
+"5eE-CQ-AL6.text" = "Ingreso";
+
+/* Class = "UILabel"; text = "New account"; ObjectID = "6yF-02-R2Q"; */
+"6yF-02-R2Q.text" = "Nueva cuenta";
+
+/* Class = "UISegmentedControl"; 7F5-Lx-HqG.segmentTitles[0] = "All time"; ObjectID = "7F5-Lx-HqG"; */
+"7F5-Lx-HqG.segmentTitles[0]" = "Todo";
+
+/* Class = "UISegmentedControl"; 7F5-Lx-HqG.segmentTitles[1] = "Year"; ObjectID = "7F5-Lx-HqG"; */
+"7F5-Lx-HqG.segmentTitles[1]" = "Año";
+
+/* Class = "UIButton"; normalTitle = "Add"; ObjectID = "7L0-Md-UQw"; */
+"7L0-Md-UQw.normalTitle" = "Añadir";
+
+/* Class = "UITextField"; placeholder = "Enter name of the new account"; ObjectID = "86C-OY-IYB"; */
+"86C-OY-IYB.placeholder" = "Ingrese el nombre de la cuenta";
+
+/* Class = "UILabel"; text = "Choose operations period"; ObjectID = "8bp-Mn-Mqm"; */
+"8bp-Mn-Mqm.text" = "Seleccionar período";
+
+/* Class = "UITabBarItem"; title = "Statistics"; ObjectID = "8w9-4n-JB0"; */
+"8w9-4n-JB0.title" = "Estadísticas";
+
+/* Class = "UILabel"; text = "Expense"; ObjectID = "9Kk-kd-f1X"; */
+"9Kk-kd-f1X.text" = "Consumo";
+
+/* Class = "UILabel"; text = "Categories"; ObjectID = "9xx-lJ-dsO"; */
+"9xx-lJ-dsO.text" = "Categorías";
+
+/* Class = "UITabBarItem"; title = "Categories"; ObjectID = "BjS-4T-M4F"; */
+"BjS-4T-M4F.title" = "Categorías";
+
+/* Class = "UILabel"; text = "New category"; ObjectID = "CnP-5a-UTF"; */
+"CnP-5a-UTF.text" = "Nuevo categoría";
+
+/* Class = "UILabel"; text = "Income"; ObjectID = "FEY-9k-HHq"; */
+"FEY-9k-HHq.text" = "Ingreso";
+
+/* Class = "UIButton"; normalTitle = "Add"; ObjectID = "GBz-lC-uQr"; */
+"GBz-lC-uQr.normalTitle" = "Añadir";
+
+/* Class = "UILabel"; text = "Expense"; ObjectID = "HMo-Ii-hjN"; */
+"HMo-Ii-hjN.text" = "Consumo";
+
+/* Class = "UIViewController"; title = "Add new expense"; ObjectID = "Hj5-ET-5z5"; */
+"Hj5-ET-5z5.title" = "Nuevo consumo";
+
+/* Class = "UIViewController"; title = "Add new income"; ObjectID = "JQ4-bJ-YMz"; */
+"JQ4-bJ-YMz.title" = "Nuevo ingreso";
+
+/* Class = "UILabel"; text = "Cash flow"; ObjectID = "MDm-6z-S9f"; */
+"MDm-6z-S9f.text" = "Flujo";
+
+/* Class = "UIButton"; normalTitle = "Cancel"; ObjectID = "NuT-RF-JxK"; */
+"NuT-RF-JxK.normalTitle" = "Cancelar";
+
+/* Class = "UISegmentedControl"; O7b-SO-SJ1.segmentTitles[0] = "All time"; ObjectID = "O7b-SO-SJ1"; */
+"O7b-SO-SJ1.segmentTitles[0]" = "Todo";
+
+/* Class = "UISegmentedControl"; O7b-SO-SJ1.segmentTitles[1] = "Year"; ObjectID = "O7b-SO-SJ1"; */
+"O7b-SO-SJ1.segmentTitles[1]" = "Año";
+
+/* Class = "UISegmentedControl"; O7b-SO-SJ1.segmentTitles[2] = "Month"; ObjectID = "O7b-SO-SJ1"; */
+"O7b-SO-SJ1.segmentTitles[2]" = "Mes";
+
+/* Class = "UISegmentedControl"; O7b-SO-SJ1.segmentTitles[3] = "Week"; ObjectID = "O7b-SO-SJ1"; */
+"O7b-SO-SJ1.segmentTitles[3]" = "Una semana";
+
+/* Class = "UISegmentedControl"; O7b-SO-SJ1.segmentTitles[4] = "Day"; ObjectID = "O7b-SO-SJ1"; */
+"O7b-SO-SJ1.segmentTitles[4]" = "Día";
+
+/* Class = "UISegmentedControl"; O7b-SO-SJ1.segmentTitles[5] = "Custom"; ObjectID = "O7b-SO-SJ1"; */
+"O7b-SO-SJ1.segmentTitles[5]" = "Otro";
+
+/* Class = "UITabBarItem"; title = "History"; ObjectID = "Pa0-HG-OdB"; */
+"Pa0-HG-OdB.title" = "Historia";
+
+/* Class = "UILabel"; text = "New transfer"; ObjectID = "QMi-JN-rRN"; */
+"QMi-JN-rRN.text" = "Nueva traducción";
+
+/* Class = "UILabel"; text = "Edit category"; ObjectID = "Ra3-TH-MBn"; */
+"Ra3-TH-MBn.text" = "Editar una categoría";
+
+/* Class = "UIButton"; normalTitle = "Save"; ObjectID = "Rs0-6r-GUo"; */
+"Rs0-6r-GUo.normalTitle" = "Ahorrar";
+
+/* Class = "UILabel"; text = "Expense"; ObjectID = "Sgs-hf-5vO"; */
+"Sgs-hf-5vO.text" = "Consumo";
+
+/* Class = "UILabel"; text = "Expense"; ObjectID = "SxS-Wa-xle"; */
+"SxS-Wa-xle.text" = "Consumo";
+
+/* Class = "UIButton"; normalTitle = "Cancel"; ObjectID = "Tqq-UW-DhX"; */
+"Tqq-UW-DhX.normalTitle" = "Cancelar";
+
+/* Class = "UILabel"; text = "Statistics"; ObjectID = "UM3-lP-7Uc"; */
+"UM3-lP-7Uc.text" = "Estadísticas";
+
+/* Class = "UILabel"; text = "Operations period"; ObjectID = "VQf-oz-FvN"; */
+"VQf-oz-FvN.text" = "Periodo de operaciones";
+
+/* Class = "UIButton"; normalTitle = "Cancel"; ObjectID = "Vg4-hE-1VD"; */
+"Vg4-hE-1VD.normalTitle" = "Cancelar";
+
+/* Class = "UITabBarItem"; title = "Categories"; ObjectID = "W7G-g6-Ys3"; */
+"W7G-g6-Ys3.title" = "Categorías";
+
+/* Class = "UILabel"; text = "Expense"; ObjectID = "WVa-vz-NN8"; */
+"WVa-vz-NN8.text" = "Consumo";
+
+/* Class = "UIButton"; normalTitle = "From account"; ObjectID = "Xae-ED-zpa"; */
+"Xae-ED-zpa.normalTitle" = "De la cuenta";
+
+/* Class = "UIButton"; normalTitle = "All time"; ObjectID = "Y6k-gt-3OP"; */
+"Y6k-gt-3OP.normalTitle" = "Todo";
+
+/* Class = "UIButton"; normalTitle = "Save"; ObjectID = "Yx8-UC-4sS"; */
+"Yx8-UC-4sS.normalTitle" = "Ahorrar";
+
+/* Class = "UIButton"; normalTitle = "Cancel"; ObjectID = "ZRd-aD-R3i"; */
+"ZRd-aD-R3i.normalTitle" = "Cancelar";
+
+/* Class = "UIViewController"; title = "Add new transfer"; ObjectID = "ZkN-gJ-MrQ"; */
+"ZkN-gJ-MrQ.title" = "Nueva traducción";
+
+/* Class = "UITextField"; placeholder = "Enter name of the new account"; ObjectID = "a61-dU-Djj"; */
+"a61-dU-Djj.placeholder" = "Ingrese el nombre de la cuenta";
+
+/* Class = "UIButton"; normalTitle = "Cancel"; ObjectID = "aNg-A9-4Kb"; */
+"aNg-A9-4Kb.normalTitle" = "Cancelar";
+
+/* Class = "UILabel"; text = "Edit account"; ObjectID = "aVK-BP-9UY"; */
+"aVK-BP-9UY.text" = "Edición de cuenta";
+
+/* Class = "UITabBarItem"; title = "Overview"; ObjectID = "bcn-Uk-U3E"; */
+"bcn-Uk-U3E.title" = "Descripción general";
+
+/* Class = "UIViewController"; title = "Operation details"; ObjectID = "bdL-iQ-uhc"; */
+"bdL-iQ-uhc.title" = "Detalles de la operación";
+
+/* Class = "UIButton"; normalTitle = "All time"; ObjectID = "bps-nX-JOs"; */
+"bps-nX-JOs.normalTitle" = "Todo";
+
+/* Class = "UIViewController"; title = "Add new account"; ObjectID = "bsV-uZ-Aj8"; */
+"bsV-uZ-Aj8.title" = "Nueva cuenta";
+
+/* Class = "UIViewController"; title = "Edit account"; ObjectID = "cj6-Z7-hIr"; */
+"cj6-Z7-hIr.title" = "Edición de cuenta";
+
+/* Class = "UIButton"; normalTitle = "Send message"; ObjectID = "cnE-Dx-rvB"; */
+"cnE-Dx-rvB.normalTitle" = "Enviar un mensaje";
+
+/* Class = "UIButton"; normalTitle = "Add"; ObjectID = "dc1-J6-ZDy"; */
+"dc1-J6-ZDy.normalTitle" = "Añadir";
+
+/* Class = "UILabel"; text = "New income"; ObjectID = "dcs-4X-coK"; */
+"dcs-4X-coK.text" = "Nuevo ingreso";
+
+/* Class = "UIButton"; normalTitle = "Delete"; ObjectID = "gtP-mX-SF3"; */
+"gtP-mX-SF3.normalTitle" = "Borrar";
+
+/* Class = "UILabel"; text = "Month"; ObjectID = "gux-S0-hCr"; */
+"gux-S0-hCr.text" = "Mes";
+
+/* Class = "UILabel"; text = "Support"; ObjectID = "hW6-Ea-Oup"; */
+"hW6-Ea-Oup.text" = "Apoyo";
+
+/* Class = "UILabel"; text = "Operations period"; ObjectID = "iVO-Jo-2Qo"; */
+"iVO-Jo-2Qo.text" = "Periodo de operaciones";
+
+/* Class = "UIViewController"; title = "Detail category"; ObjectID = "iiL-Q6-tSh"; */
+"iiL-Q6-tSh.title" = "Detalles de la categoría";
+
+/* Class = "UIButton"; normalTitle = "To account"; ObjectID = "ivL-dA-tDw"; */
+"ivL-dA-tDw.normalTitle" = "A la cuenta";
+
+/* Class = "UIButton"; normalTitle = "Add"; ObjectID = "jZt-YW-3cV"; */
+"jZt-YW-3cV.normalTitle" = "Añadir";
+
+/* Class = "UIButton"; normalTitle = "Choose account"; ObjectID = "jsN-KV-XpW"; */
+"jsN-KV-XpW.normalTitle" = "A la cuenta";
+
+/* Class = "UIButton"; normalTitle = "All time"; ObjectID = "kki-13-xgR"; */
+"kki-13-xgR.normalTitle" = "Todo";
+
+/* Class = "UILabel"; text = "Your balance"; ObjectID = "kwf-nZ-XFx"; */
+"kwf-nZ-XFx.text" = "Tu balance";
+
+/* Class = "UIButton"; normalTitle = "Delete"; ObjectID = "lvW-WL-jKB"; */
+"lvW-WL-jKB.normalTitle" = "Borrar";
+
+/* Class = "UILabel"; text = "Cash flow"; ObjectID = "m74-1U-QFK"; */
+"m74-1U-QFK.text" = "Flujo";
+
+/* Class = "UILabel"; text = "Operation details"; ObjectID = "mTV-vN-DAP"; */
+"mTV-vN-DAP.text" = "Detalles de la operación";
+
+/* Class = "UIButton"; normalTitle = "From account"; ObjectID = "n3N-Kl-hVf"; */
+"n3N-Kl-hVf.normalTitle" = "De la cuenta";
+
+/* Class = "UIButton"; normalTitle = "Cancel"; ObjectID = "nWD-Ms-UDX"; */
+"nWD-Ms-UDX.normalTitle" = "Cancelar";
+/* Class = "UIButton"; normalTitle = "Save"; ObjectID = "oR7-0i-irA"; */
+"oR7-0i-irA.normalTitle" = "Ahorrar";
+
+/* Class = "UITextField"; placeholder = "Enter name of the new category"; ObjectID = "ohE-bD-JnS"; */
+"ohE-bD-JnS.placeholder" = "Ingrese el nombre de la categoría";
+
+/* Class = "UIButton"; normalTitle = "Add"; ObjectID = "p8q-gV-gSQ"; */
+"p8q-gV-gSQ.normalTitle" = "Añadir";
+
+/* Class = "UITabBarItem"; title = "Support"; ObjectID = "pcy-jb-E1t"; */
+"pcy-jb-E1t.title" = "Apoyo";
+
+/* Class = "UIButton"; normalTitle = "Cancel"; ObjectID = "pkJ-wm-0L1"; */
+"pkJ-wm-0L1.normalTitle" = "Cancelar";
+
+/* Class = "UILabel"; text = "Cash flow"; ObjectID = "rcv-74-7Vt"; */
+"rcv-74-7Vt.text" = "Flujo";
+
+/* Class = "UILabel"; text = "Category"; ObjectID = "tDV-fY-RjP"; */
+"tDV-fY-RjP.text" = "Categoría";
+
+/* Class = "UILabel"; text = "Accounts"; ObjectID = "thb-kH-vCA"; */
+"thb-kH-vCA.text" = "Cuentas";
+
+/* Class = "UITextField"; placeholder = "Enter name of the new category"; ObjectID = "y27-kO-Tc9"; */
+"y27-kO-Tc9.placeholder" = "Ingrese el nombre de la categoría";
+
+/* Class = "UIButton"; normalTitle = "Cancel"; ObjectID = "yNi-tr-gt1"; */
+"yNi-tr-gt1.normalTitle" = "Cancelar";
+
+/* Class = "UISegmentedControl"; zP4-Mx-txF.segmentTitles[0] = "All time"; ObjectID = "zP4-Mx-txF"; */
+"zP4-Mx-txF.segmentTitles[0]" = "Todo";
+
+/* Class = "UISegmentedControl"; zP4-Mx-txF.segmentTitles[1] = "Year"; ObjectID = "zP4-Mx-txF"; */
+"zP4-Mx-txF.segmentTitles[1]" = "Año";
+
+/* Class = "UISegmentedControl"; zP4-Mx-txF.segmentTitles[2] = "Month"; ObjectID = "zP4-Mx-txF"; */
+"zP4-Mx-txF.segmentTitles[2]" = "Mes";
+
+/* Class = "UISegmentedControl"; zP4-Mx-txF.segmentTitles[3] = "Week"; ObjectID = "zP4-Mx-txF"; */
+"zP4-Mx-txF.segmentTitles[3]" = "Una semana";
+
+/* Class = "UISegmentedControl"; zP4-Mx-txF.segmentTitles[4] = "Day"; ObjectID = "zP4-Mx-txF"; */
+"zP4-Mx-txF.segmentTitles[4]" = "Día";
+
+/* Class = "UISegmentedControl"; zP4-Mx-txF.segmentTitles[5] = "Custom"; ObjectID = "zP4-Mx-txF"; */
+"zP4-Mx-txF.segmentTitles[5]" = "Otro";
+
+/* Class = "UILabel"; text = "Income"; ObjectID = "zSP-WK-DH6"; */
+"zSP-WK-DH6.text" = "Ingreso";
+
+/* Class = "UILabel"; text = "Operations time period"; ObjectID = "zyz-Oj-oGX"; */
+"zyz-Oj-oGX.text" = "Periodo de operaciones";
+

@@ -1,0 +1,13 @@
+"Balance" = "Баланс";
+"All time" = "За все время";
+"Comment" = "Заметка";
+"From: incomes" = "Откуда: доходы";
+"Account deleted" = "Счет удален";
+"Category deleted" = "Категория удалена";
+"From" = "Откуда";
+"Warning" = "Предупреждение!";
+"Please check, that entered amount is greater than 0 and account for income operation is chosen!" = "Убедитесь, что введенная сумма больше 0 и счет для доходной операции выбран!";
+"There are no any options to choose. You need to add new account!" = "Нет доступных вариантов для выбора. Вам нужно добавить новый счет!";
+"There are no any options to choose. You need to add new category!" = "Нет доступных вариантов для выбора. Вам нужно добавить новую категорию!";
+"Please check, that entered amount is greater than 0, account and category for expense operation are chosen!" = "Убедитесь, что введенная сумма больше 0, счет и категория для расходной операции выбраны!";
+"Please check, that entered amount is greater than 0, accounts for transfer operation are chosen and they are not same!" = "Убедитесь, что введенная сумма больше 0 и счета для операции перевода выбраны!";

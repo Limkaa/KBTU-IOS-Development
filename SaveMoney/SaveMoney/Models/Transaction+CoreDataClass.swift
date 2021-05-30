@@ -94,9 +94,13 @@ extension Transaction {
     
     
     // Group transactions by date and sort them
-    static func groupRequestedTransactions(transactions: [Transaction]) -> [[Transaction]] {
+    static func groupRequestedTransactions(transactions: [Transaction], by: DateRangeType) -> [[Transaction]] {
         let transactionsGrouped = Dictionary(grouping: transactions) { (transaction: Transaction) -> Date in
-            return (transaction.date?.middleOfDay)!
+            if by == .month {
+                return (transaction.date?.endOfMonth)!
+            } else {
+                return (transaction.date?.middleOfDay)!
+            }
         }
         
         var requestedTransactions: [[Transaction]] = []

@@ -67,7 +67,7 @@ class AddExpenseViewController: UIViewController {
             fromAccountDropDownMenu.font = UIFont(name: "Helvetica", size: 20)
             fromAccountDropDownMenu.addTransparentView()
         } else {
-            let alert = UIAlertController(title: "Warning", message: "There are no any options to choose. You need to add new account!", preferredStyle: .alert)
+            let alert = UIAlertController(title: "Warning".localized(), message: "There are no any options to choose. You need to add new account!".localized(), preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
             self.present(alert, animated: true)
         }
@@ -86,7 +86,7 @@ class AddExpenseViewController: UIViewController {
             toCategoryDropDownMenu.font = UIFont(name: "Helvetica", size: 20)
             toCategoryDropDownMenu.addTransparentView()
         } else {
-            let alert = UIAlertController(title: "Warning", message: "There are no any options to choose. You need to add new account!", preferredStyle: .alert)
+            let alert = UIAlertController(title: "Warning".localized(), message: "There are no any options to choose. You need to add new category!".localized(), preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
             self.present(alert, animated: true)
         }
@@ -128,7 +128,7 @@ class AddExpenseViewController: UIViewController {
     
     @IBAction func addPressed(_ sender: UIButton) {
         if fromAccountDropDownMenu.choosenObject == nil || toCategoryDropDownMenu.choosenObject == nil || amountLabel.text!.stringByRemovingWhitespaces == "0" {
-            let alert = UIAlertController(title: "Warning", message: "Please check, that entered amount is greater than 0, account and category for expense operation are chosen!", preferredStyle: .alert)
+            let alert = UIAlertController(title: "Warning".localized(), message: "Please check, that entered amount is greater than 0, account and category for expense operation are chosen!".localized(), preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
             self.present(alert, animated: true)
         }

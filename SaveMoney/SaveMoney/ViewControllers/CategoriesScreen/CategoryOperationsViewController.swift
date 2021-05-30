@@ -48,11 +48,11 @@ class CategoryOperationsViewController: UIViewController {
     func reloadData() {
         let request = category.getTransactions(from: datesRange.from, till: datesRange.till)
         let requestedTransactions = try! context.fetch(request)
-        self.transactions = Transaction.groupRequestedTransactions(transactions: requestedTransactions)
+        self.transactions = Transaction.groupRequestedTransactions(transactions: requestedTransactions, by: .day)
         
         let amountsRequest = Transaction.getAmountOfTransactions(request: request)
         let amounts = try! context.fetch(amountsRequest)
-        expenseLabel.text = "- \(Transaction.getAmount(result: amounts, type: .expense).formattedWithSeparator)"
+        expenseLabel.text = Transaction.getAmount(result: amounts, type: .expense).formattedWithSeparator
         
         operationsHistoryTableView.reloadData()
     }
